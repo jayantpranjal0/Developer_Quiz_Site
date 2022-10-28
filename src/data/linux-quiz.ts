@@ -1158,6 +1158,28 @@ const linuxQuiz = [
     Explanation:
       "In Linux, you can use the diff command to display the difference between two files'.",
     Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-diff-command"
+  },
+  {
+    Question:
+      "In Linux, which command is used to used to securely remove data?",
+    Answer: "shred",
+    Distractor1: "rm",
+    Distractor2: "mkdir",
+    Distractor3: "dd",
+    Explanation:
+      "The shred command helps to overwrite the data in place several times. This makes it harder for third party software and hardware probing to recover the data. That is why it's commonly used to securely remove data.",
+    Link: "https://www.freecodecamp.org/news/securely-erasing-a-disk-and-file-using-linux-command-shred/"
+  },
+  {
+    Question:
+      "In Linux, which the command is used to remove an empty directory?",
+    Answer: "rmdir",
+    Distractor1: "remove",
+    Distractor2: "rdir",
+    Distractor3: "delete",
+    Explanation:
+      "If you have an empty directory that you would like to remove, then you can use the rmdir command in the terminal.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-rmdir-command"
   }
 ];
 
