@@ -1,12 +1,13 @@
 const generalCSQuiz = [
-   {
+  {
     Question: "What is the best algorithm for matrix multiplication?",
     Answer: "Strassen's Algorithm",
     Distractor1: "Multiplication algorithm",
     Distractor2: "Divide and Conquer Technique",
     Distractor3: "None of the above",
-    Explanation: "Strassen's algorithm reduces the number of multiplication and addition in a given matrix and results in a time complexity of O(2.81)",
-    Link: "https://en.wikipedia.org/wiki/Strassen_algorithm#",
+    Explanation:
+      "Strassen's algorithm reduces the number of multiplication and addition in a given matrix and results in a time complexity of O(2.81)",
+    Link: "https://en.wikipedia.org/wiki/Strassen_algorithm#"
   },
   {
     Question: "Which of the following sorting algorithms is stable in nature?",
@@ -14,17 +15,20 @@ const generalCSQuiz = [
     Distractor1: "Heap Sort",
     Distractor2: "Quick Sort",
     Distractor3: "Selection sort",
-    Explanation: "Stable sorting algorithms maintain the relative order of elements with equal values, or keys. Merge sort is stable in nature.",
-    Link: "https://www.freecodecamp.org/news/sorting-algorithms-explained-with-examples-in-python-java-and-c/#classification-of-a-sorting-algorithm",
+    Explanation:
+      "Stable sorting algorithms maintain the relative order of elements with equal values, or keys. Merge sort is stable in nature.",
+    Link: "https://www.freecodecamp.org/news/sorting-algorithms-explained-with-examples-in-python-java-and-c/#classification-of-a-sorting-algorithm"
   },
   {
-    Question: "Which of the following sorting algorithms has the same best-case and worst-case time complexities?",
+    Question:
+      "Which of the following sorting algorithms has the same best-case and worst-case time complexities?",
     Answer: "Merge Sort",
     Distractor1: "Bubble Sort",
     Distractor2: "Quick Sort",
     Distractor3: "Selection sort",
-    Explanation: "Merge sort has a time complexity of O(nlogn) in all cases - best, average and worst.",
-    Link: "https://www.freecodecamp.org/news/merge-sort-algorithm-python-and-java-examples-with-time-complexity/",
+    Explanation:
+      "Merge sort has a time complexity of O(nlogn) in all cases - best, average and worst.",
+    Link: "https://www.freecodecamp.org/news/merge-sort-algorithm-python-and-java-examples-with-time-complexity/"
   },
   {
     Question: "What is Object-Oriented Programming?",
@@ -77,7 +81,7 @@ const generalCSQuiz = [
       "Which term is used for removing elements from the front of the queue?",
     Answer: "Dequeue.",
     Distractor1: "Enqueue.",
-    Distractor2: "Peek.", 
+    Distractor2: "Peek.",
     Distractor3: "isFull.",
     Explanation:
       "Dequeue is the term for removing elements from the front of the queue.",
@@ -177,14 +181,14 @@ const generalCSQuiz = [
   },
   {
     Question: "Which of the following is true for a graph?",
-    Answer: "A graph is bipartite if and only if it is two colourable.",
+    Answer: "A graph is bipartite if and only if it is two colorable.",
     Distractor1:
       "A graph is bipartite if and only if it does not contain an even length cycle.",
-    Distractor2: "A graph is bipartite if and only if it is three colourable.",
+    Distractor2: "A graph is bipartite if and only if it is three colorable.",
     Distractor3:
       "A graph is bipartite if and only if it is a directed acyclic graph",
     Explanation:
-      "If a graph is two colourable then the nodes with same colour can be grouped together to form two different groups.",
+      "If a graph is two colorable then the nodes with same color can be grouped together to form two different groups.",
     Link: "https://www.youtube.com/watch?v=09_LlHjoEiY&list=PLWKjhJtqVAbn5emQ3RRG8gEBqkhf_5vxD&t=440s"
   },
   {
@@ -268,7 +272,7 @@ const generalCSQuiz = [
   {
     Question: "Which of the following is the most correct statement?",
     Answer: "Topological sort is possible only for a Directed Acyclic Graph",
-    Distractor1: "Toplogical sort is just an another name for BFS",
+    Distractor1: "Topological sort is just an another name for BFS",
     Distractor2: "All undirected graphs have topological ordering",
     Distractor3: "A cyclic graph also has topological ordering.",
     Explanation:
@@ -1172,7 +1176,7 @@ const generalCSQuiz = [
     Answer: "Abstraction, Encapsulation, Inheritance, and Polymorphism.",
     Distractor1: "Objects, Methods, Properties and Fields.",
     Distractor2: "Immutability, Purity, Transparency and State.",
-    Distractor3: "Declaration, Modeling, Evaluation and Implementaion.",
+    Distractor3: "Declaration, Modeling, Evaluation and Implementation.",
     Explanation:
       "Abstraction, encapsulation, inheritance, and polymorphism are software design principles to help you write clean object-oriented code.",
     Link: "https://www.freecodecamp.org/news/four-pillars-of-object-oriented-programming/"
@@ -1231,7 +1235,7 @@ const generalCSQuiz = [
     Link: "https://www.freecodecamp.org/news/an-intro-to-advanced-sorting-algorithms-merge-quick-radix-sort-in-javascript-b65842194597/"
   },
   {
-    Question: "What is the advanatge of using linked lists over arrays?",
+    Question: "What is the advantage of using linked lists over arrays?",
     Answer: "Linked lists helps in faster insertions and deletions than arrays",
     Distractor1: "Memory usage in linked lists is less than arrays",
     Distractor2: "Reverse traversal is possible in singly linked lists",
@@ -1267,7 +1271,7 @@ const generalCSQuiz = [
       "Which algorithm finds the shortest path between nodes in a graph?",
     Answer: "Dijkstra's Algorithm",
     Distractor1: "Rabin-Karp Algorithm",
-    Distractor2: "Binary Search Algoritm",
+    Distractor2: "Binary Search Algorithm",
     Distractor3: "Quicksort Algorithm",
     Explanation:
       "Dijkstra's Algorithm can find the shortest path from a node (called the 'source node') to all other nodes in the graph, producing a shortest-path tree.",
@@ -1321,39 +1325,50 @@ const generalCSQuiz = [
     Link: "https://www.freecodecamp.org/news/search-algorithms-linear-and-binary-search-explained/"
   },
   {
-    Question:"What is Proprietary Software?",
+    Question: "What is Proprietary Software?",
     Answer: "Software which is owned by an organization or an individual.",
-    Distractor1: "Software where the code is publicly available for people to modify, and share.",
+    Distractor1:
+      "Software where the code is publicly available for people to modify, and share.",
     Distractor2: "Software where the code can be used by everyone for free",
     Distractor3: "Software that has only been developed by Oracle",
-    Explanation: "The original authors of proprietary software can modify its code. Users of this type of software have to agree not to alter it in any way unless they have permission from the owners to do so.",
+    Explanation:
+      "The original authors of proprietary software can modify its code. Users of this type of software have to agree not to alter it in any way unless they have permission from the owners to do so.",
     Link: "https://www.freecodecamp.org/news/what-is-open-source-software-explained-in-plain-english"
   },
   {
-    Question:"What is Open Source Software?",
-    Answer: "A type of software where the code is publicly available for people to view, modify, and share.",
+    Question: "What is Open Source Software?",
+    Answer:
+      "A type of software where the code is publicly available for people to view, modify, and share.",
     Distractor1: "Software owned by Big Tech Companies",
     Distractor2: "Software developed by Facebook",
-    Distractor3: "Software where the code is only available to a select few people",
-    Explanation: "Open Source Software is code that is publicly available for people to view, modify, and share. One example of open source would be freeCodeCamp.",
+    Distractor3:
+      "Software where the code is only available to a select few people",
+    Explanation:
+      "Open Source Software is code that is publicly available for people to view, modify, and share. One example of open source would be freeCodeCamp.",
     Link: "https://www.freecodecamp.org/news/what-is-open-source-software-explained-in-plain-english"
   },
   {
-    Question:"How does the Bubble Sort algorithm work?",
-    Answer: "This algorithm traverses a list, compares adjacent values, and swaps them if they are not in the correct order.",
-    Distractor1: "This algorithm divides the list into different buckets and sorts these buckets individually.",
-    Distractor2: "This algorithm selects the current smallest element, and swaps it into place.",
+    Question: "How does the Bubble Sort algorithm work?",
+    Answer:
+      "This algorithm traverses a list, compares adjacent values, and swaps them if they are not in the correct order.",
+    Distractor1:
+      "This algorithm divides the list into different buckets and sorts these buckets individually.",
+    Distractor2:
+      "This algorithm selects the current smallest element, and swaps it into place.",
     Distractor3: "This algorithm breaks down an unsorted list into two halves.",
-    Explanation: "The Bubble Sort algorithm traverses a list, compares adjacent values, and swaps them if they are not in the correct order.",
+    Explanation:
+      "The Bubble Sort algorithm traverses a list, compares adjacent values, and swaps them if they are not in the correct order.",
     Link: "https://www.freecodecamp.org/news/sorting-algorithms-explained-with-examples-in-python-java-and-c"
   },
   {
-    Question: "What is the underlining process behind the Merge Sort algorithm?",
+    Question:
+      "What is the underlining process behind the Merge Sort algorithm?",
     Answer: "Recursion",
     Distractor1: "String matching and parsing",
     Distractor2: "backtracking",
     Distractor3: "graph traversal",
-    Explanation: "The Merge Sort algorithm works by recursively breaking down an unsorted list into two halves until it reaches a point where it can no longer be broken down.",
+    Explanation:
+      "The Merge Sort algorithm works by recursively breaking down an unsorted list into two halves until it reaches a point where it can no longer be broken down.",
     Link: "https://www.freecodecamp.org/news/how-to-sort-recursively-in-python"
   },
   {
@@ -1362,11 +1377,12 @@ const generalCSQuiz = [
     Distractor1: "An Array indicator for programming languages",
     Distractor2: "A Data Structure for data arrangement",
     Distractor3: "a programming language for complex tasks",
-    Explanation: "A string is a data type that can contain many different characters. A string is written as a series of characters between single or double quotes.",
+    Explanation:
+      "A string is a data type that can contain many different characters. A string is written as a series of characters between single or double quotes.",
     Link: "https://www.freecodecamp.org/news/how-to-lowercase-a-string-in-javascript-tolowercase-in-js/"
   },
   {
-    Question:"What is the worst case time complexity for Bubble sort?",
+    Question: "What is the worst case time complexity for Bubble sort?",
     Answer: "O(n^2)",
     Distractor1: "O(logn)",
     Distractor2: "O(n)",
@@ -1376,7 +1392,8 @@ const generalCSQuiz = [
     Link: "https://www.freecodecamp.org/news/bubble-sort/"
   },
   {
-    Question:"Which of the following time complexities is considered to be the fastest?",
+    Question:
+      "Which of the following time complexities is considered to be the fastest?",
     Answer: "O(1)",
     Distractor1: "O(logn)",
     Distractor2: "O(n)",

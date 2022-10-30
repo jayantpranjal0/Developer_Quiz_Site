@@ -1010,7 +1010,7 @@ const cssQuiz = [
     Link: "https://www.freecodecamp.org/news/10-css-tricks-for-your-next-coding-project/"
   },
   {
-    Question: "How do you create a flexbox container in CSS Flexbox?",
+    Question: "How do you create a Flexbox container in CSS Flexbox?",
     Answer: "display:flex;",
     Distractor1: "display:flexbox;",
     Distractor2: "display:flexcontainer;",
@@ -1194,17 +1194,20 @@ const cssQuiz = [
     Distractor1: ":nth-last-child",
     Distractor2: ":last-child",
     Distractor3: ":last",
-    Explanation: "We can use the :last-of-type selector to target an element of a specific type within a container.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/CSS/:last-of-type/",
+    Explanation:
+      "We can use the :last-of-type selector to target an element of a specific type within a container.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/CSS/:last-of-type/"
   },
   {
-    Question: "In CSS, which of the following properties can be used to set the body color to black?",
+    Question:
+      "In CSS, which of the following properties can be used to set the body color to black?",
     Answer: "background-color:black;",
     Distractor1: "body-color:black",
     Distractor2: "backgroundColor:black",
     Distractor3: "color:black",
-    Explanation: "In CSS, the background-color property is used to set the color of the background.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+    Explanation:
+      "In CSS, the background-color property is used to set the color of the background.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color"
   },
   {
     Question:

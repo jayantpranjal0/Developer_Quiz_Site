@@ -390,15 +390,6 @@ const pythonQuiz = [
     Link: "https://www.freecodecamp.org/news/python-print-variable-how-to-print-a-string-and-variable/"
   },
   {
-    Question: "In Python, what is the new line character?",
-    Answer: "\\n",
-    Distractor1: "\\s",
-    Distractor2: "\\new",
-    Distractor3: "\\m",
-    Explanation: "\\n is the newline character in Python.",
-    Link: "https://www.freecodecamp.org/news/python-new-line-and-how-to-python-print-without-a-newline/"
-  },
-  {
     Question: "In Python, how can you create an empty dictionary?",
     Answer: "{}",
     Distractor1: "[]",
@@ -969,7 +960,7 @@ const pythonQuiz = [
     Distractor2: "Maintainable",
     Distractor3: "Unstoppable",
     Explanation:
-      "Strings are immutable, so we can’t update or remove their characters after they have been defined in the program. ",
+      "Strings are immutable, so we can't update or remove their characters after they have been defined in the program. ",
     Link: "https://www.freecodecamp.org/news/python-code-examples-sample-script-coding-tutorial-for-beginners/#-data-types-and-built-in-data-structures-in-python"
   },
   {
@@ -1625,13 +1616,15 @@ const pythonQuiz = [
     Link: "https://docs.python.org/3/tutorial/datastructures.html"
   },
   {
-    Question: "Which version of Python introduced the math.perm() and math.prod() functions?",
+    Question:
+      "Which version of Python introduced the math.perm() and math.prod() functions?",
     Answer: "Python 3.8",
     Distractor1: "Python 3.7",
     Distractor2: "Python 3.9",
     Distractor3: "Python 3.3",
-    Explanation: "The release of Python 3.8 introduced the math.perm() and math.prod() functions.",
-    Link: "https://docs.python.org/3.8/library/math.html#math.perm",
+    Explanation:
+      "The release of Python 3.8 introduced the math.perm() and math.prod() functions.",
+    Link: "https://docs.python.org/3.8/library/math.html#math.perm"
   },
   {
     Question: "Which of the following is a built-in function in Python?",
@@ -1639,10 +1632,11 @@ const pythonQuiz = [
     Distractor1: "perm()",
     Distractor2: "mainloop()",
     Distractor3: "getcwd()",
-    Explanation: "Python's built in print() function is used to print messages to the screen.",
+    Explanation:
+      "Python's built in print() function is used to print messages to the screen.",
     Link: "https://docs.python.org/3/library/functions.html#print"
   },
-  
+
   {
     Question: "In Python, which of the following is NOT a built-in data type?",
     Answer: "class",
@@ -1651,7 +1645,7 @@ const pythonQuiz = [
     Distractor3: "frozenset",
     Explanation: "In Python, a class is a user defined data type.",
     Link: "https://docs.python.org/3/library/datatypes.html"
-  },
+  }
 ];
 
 export default pythonQuiz;
