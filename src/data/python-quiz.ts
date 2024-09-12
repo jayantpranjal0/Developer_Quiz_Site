@@ -1,25 +1,35 @@
 const pythonQuiz = [
-   {
-    Question: 
+  {
+    Question:
       "In Python, what is the output of the following code: print(list(range(3, 6)))?",
     Answer: "[3, 4, 5]",
     Distractor1: "[3, 4, 5, 6]",
     Distractor2: "[3, 6]",
     Distractor3: "[3, 3, 3, 3, 3, 3]",
-    Explanation: 
+    Explanation:
       "The list(range(3, 6)) function returns a list of numbers from 3, increments by 1 (by default), and stops at 5 (excluding 6).",
-    Link: "https://www.freecodecamp.org/news/python-range-function-explained-with-code-examples/",
-   },
-   {
-    Question: 
-      "In Python, which method is used to write text to a file?",
+    Link: "https://www.freecodecamp.org/news/python-range-function-explained-with-code-examples/"
+  },
+  {
+    Question:
+      "In Python, which method is used to trim trailing whitespace from a string?",
+    Answer: "strip()",
+    Distractor1: "trim()",
+    Distractor2: "remove()",
+    Distractor3: "removesapce()",
+    Explanation:
+      "Python has three built-in methods for trimming leading and trailing whitespace and characters from strings: strip(), lstrip(), rstrip()",
+    Link: "https://www.freecodecamp.org/news/python-strip-how-to-trim-a-string-or-line/"
+  },
+  {
+    Question: "In Python, which method is used to write text to a file?",
     Answer: "write()",
     Distractor1: "read()",
     Distractor2: "appending()",
     Distractor3: "writing()",
-    Explanation: 
+    Explanation:
       "In Python the write() method is used to write text to a file.",
-    Link: "https://www.freecodecamp.org/news/python-create-file-how-to-append-and-write-to-a-text-file/",
+    Link: "https://www.freecodecamp.org/news/python-create-file-how-to-append-and-write-to-a-text-file/"
   },
   {
     Question:
@@ -380,15 +390,6 @@ const pythonQuiz = [
     Link: "https://www.freecodecamp.org/news/python-print-variable-how-to-print-a-string-and-variable/"
   },
   {
-    Question: "In Python, what is the new line character?",
-    Answer: "\\n",
-    Distractor1: "\\s",
-    Distractor2: "\\new",
-    Distractor3: "\\m",
-    Explanation: "\\n is the newline character in Python.",
-    Link: "https://www.freecodecamp.org/news/python-new-line-and-how-to-python-print-without-a-newline/"
-  },
-  {
     Question: "In Python, how can you create an empty dictionary?",
     Answer: "{}",
     Distractor1: "[]",
@@ -660,16 +661,6 @@ const pythonQuiz = [
     Link: "https://docs.python.org/3/library/functions.html#round"
   },
   {
-    Question: "In Python, what do you use to write comments?",
-    Answer: "#",
-    Distractor1: "!",
-    Distractor2: "//",
-    Distractor3: "/* */",
-    Explanation:
-      "Everything after the # symbol is considered a comment in Python and therefore is not executed.",
-    Link: "https://www.freecodecamp.org/news/the-ultimate-guide-to-python-from-beginner-to-intermediate-to-pro/#comment-"
-  },
-  {
     Question:
       "In Python, non-empty sequences, non-empty collections, and numerical values different from 0 are...",
     Answer: "Truthy",
@@ -679,16 +670,6 @@ const pythonQuiz = [
     Explanation:
       "Non-empty sequences, collections, and numerical values different from 0 are truthy values.",
     Link: "https://www.freecodecamp.org/news/truthy-and-falsy-values-in-python/"
-  },
-  {
-    Question:
-      "In Python, which built-in function is used for taking user input?",
-    Answer: "input()",
-    Distractor1: "in()",
-    Distractor2: "user()",
-    Distractor3: "receive()",
-    Explanation: "The input() function is used to take user input in Python.",
-    Link: "https://www.freecodecamp.org/news/the-ultimate-guide-to-python-from-beginner-to-intermediate-to-pro/"
   },
   {
     Question: "In Python, how can you create an empty list?",
@@ -959,7 +940,7 @@ const pythonQuiz = [
     Distractor2: "Maintainable",
     Distractor3: "Unstoppable",
     Explanation:
-      "Strings are immutable, so we can’t update or remove their characters after they have been defined in the program. ",
+      "Strings are immutable, so we can't update or remove their characters after they have been defined in the program. ",
     Link: "https://www.freecodecamp.org/news/python-code-examples-sample-script-coding-tutorial-for-beginners/#-data-types-and-built-in-data-structures-in-python"
   },
   {
@@ -1219,17 +1200,6 @@ const pythonQuiz = [
   },
   {
     Question:
-      "In Python, if you try to access a key that does not exist in a dictionary, you will get a...",
-    Answer: "KeyError",
-    Distractor1: "Spelling Error",
-    Distractor2: "ValueError",
-    Distractor3: "TypeError",
-    Explanation:
-      "If you try to access a key that does not exist in a Python dictionary, you will get a KeyError.",
-    Link: "https://www.freecodecamp.org/news/python-dictionaries-detailed-visual-introduction/"
-  },
-  {
-    Question:
       "In Python, what function returns the string representing a character whose Unicode code point is the integer passed as an argument?",
     Answer: "chr()",
     Distractor1: "ord()",
@@ -1445,17 +1415,6 @@ const pythonQuiz = [
   },
   {
     Question:
-      "Which of the following statements is used to create an empty set in Python?",
-    Answer: "set()",
-    Distractor1: "{}",
-    Distractor2: "[]",
-    Distractor3: "()",
-    Explanation:
-      "{} creates an empty dictionary while set() creates an empty set.",
-    Link: "https://www.freecodecamp.org/news/free-python-crash-course/"
-  },
-  {
-    Question:
       "In Python, if y = lambda x : x ** 2 + 7 , then what will be the result returned when the following code is executed: print(y(3))?",
     Answer: "16",
     Distractor1: "5",
@@ -1515,7 +1474,7 @@ const pythonQuiz = [
     Distractor2: "len(x)",
     Distractor3: "os.getsizeof(x)",
     Explanation:
-      "When you import the sys module and use the the getsizeof() method, Python will calculate how much memory that object has consumed.",
+      "When you import the sys module and use the getsizeof() method, Python will calculate how much memory that object has consumed.",
     Link: "https://www.freecodecamp.org/news/python-programming-tips/"
   },
   {
@@ -1581,35 +1540,158 @@ const pythonQuiz = [
     Distractor2: "297.49",
     Distractor3: "297.4885",
     Explanation: "print('%.3f'%x) would round 297.4887 to 3 decimal places.",
-    Link: "https://www.freecodecamp.org/news/2f-in-python-what-does-it-mean/",
+    Link: "https://www.freecodecamp.org/news/2f-in-python-what-does-it-mean/"
   },
-   {
+  {
     Question: "In Python, what is the result for math.trunc(3.1)?",
     Answer: "3",
     Distractor1: "3.5",
     Distractor2: "3.14",
     Distractor3: "0.1",
-    Explanation: "In Python, math.trunc() will return the truncated integer part of the number. When the number is positive, math.trunc() is similar to the .floor() method. But if the number is negative, math.trunc() is similar to the .ceil() method",
-    Link: "https://docs.python.org/3/library/math.html",
+    Explanation:
+      "In Python, math.trunc() will return the truncated integer part of the number. When the number is positive, math.trunc() is similar to the .floor() method. But if the number is negative, math.trunc() is similar to the .ceil() method",
+    Link: "https://docs.python.org/3/library/math.html"
   },
-   {
-    Question: "In Python, what is the output for the following: print([10, 20, 60, 90][:2:])?",
+  {
+    Question:
+      "In Python, what is the output for the following: print([10, 20, 60, 90][:2:])?",
     Answer: "[10, 20]",
     Distractor1: "[10, 30, 50, 70, 90]",
     Distractor2: "[70, 90]",
     Distractor3: "[10, 20, 30]",
-    Explanation: "In Python, list slicing syntax is list[start:stop[:step]]. The start, stop and step parameters are all optional and if omitted will refer to the defaults of 0, length of sequence and 1 respectively.",
-    Link: "https://python-reference.readthedocs.io/en/latest/docs/brackets/slicing.html",
+    Explanation:
+      "In Python, list slicing syntax is list[start:stop[:step]]. The start, stop and step parameters are all optional and if omitted will refer to the defaults of 0, length of sequence and 1 respectively.",
+    Link: "https://python-reference.readthedocs.io/en/latest/docs/brackets/slicing.html"
   },
   {
-    Question: "In Python, which method is used to trim trailing whitespace from a string?",
-    Answer: "strip()",
-    Distractor1: "trim()",
-    Distractor2: "remove()",
-    Distractor3: "removesapce()",
-    Explanation: "Python has three built-in methods for trimming leading and trailing whitespace and characters from strings: strip(), lstrip(), rstrip()",
-    Link: "https://www.freecodecamp.org/news/python-strip-how-to-trim-a-string-or-line/",
+    Question: "In Python, what does the clear() method in a list do?",
+    Answer: "To delete all the elements of the list",
+    Distractor1: "To delete the list",
+    Distractor2: "To delete the last element of the list",
+    Distractor3: "To delete the specific element of the list",
+    Explanation:
+      "In Python, the clear() method in list is used to delete all the elements of the list.",
+    Link: "https://docs.python.org/3/tutorial/datastructures.html"
   },
+  {
+    Question:
+      "Which version of Python introduced the math.perm() and math.prod() functions?",
+    Answer: "Python 3.8",
+    Distractor1: "Python 3.7",
+    Distractor2: "Python 3.9",
+    Distractor3: "Python 3.3",
+    Explanation:
+      "The release of Python 3.8 introduced the math.perm() and math.prod() functions.",
+    Link: "https://docs.python.org/3.8/library/math.html#math.perm"
+  },
+  {
+    Question: "Which of the following is a built-in function in Python?",
+    Answer: "print()",
+    Distractor1: "perm()",
+    Distractor2: "mainloop()",
+    Distractor3: "getcwd()",
+    Explanation:
+      "Python's built in print() function is used to print messages to the screen.",
+    Link: "https://docs.python.org/3/library/functions.html#print"
+  },
+  {
+    Question: "In Python, which of the following statements is false?",
+    Answer: "Lists in Python are of a fixed size.",
+    Distractor1: "Tuples are an ordered, immutable set of data.",
+    Distractor2: "Dictionaries associate keywords with values.",
+    Distractor3: "Python is an object-oriented language.",
+    Explanation: "In Python, lists are not fixed-size.",
+    Link: "https://www.freecodecamp.org/news/python-array-tutorial-define-index-methods/"
+  },
+  {
+    Question: "In Python, which of the following is NOT a built-in data type?",
+    Answer: "class",
+    Distractor1: "set",
+    Distractor2: "dict",
+    Distractor3: "frozenset",
+    Explanation: "In Python, a class is a user defined data type.",
+    Link: "https://docs.python.org/3/library/datatypes.html"
+  },
+  {
+    Question:
+      "In Python, which of the following is NOT the right way to find 5 raised to the power of 9?",
+    Answer: "print(deg(5,9))",
+    Distractor1: "print(5**9)",
+    Distractor2: "print(pow(5,9))",
+    Distractor3: "print(math.pow(9, 3))",
+    Explanation:
+      "In Python, the '**' operator, the built-in function pow() and the math.pow() function are three different ways to get the exponent to the base.",
+    Link: "https://docs.python.org/3/library/math.html"
+  },
+  {
+    Question: "In Python, which of the following is NOT a list method?",
+    Answer: "add()",
+    Distractor1: "append()",
+    Distractor2: "pop()",
+    Distractor3: "extend()",
+    Explanation:
+      "In Python, lists have several built-in methods to perform various operations. However, the method 'add()' is not a valid method for lists.",
+    Link: "https://www.freecodecamp.org/news/lists-in-python-comprehensive-guide/"
+  },
+  {
+    Question:
+      "Which of the following statements is true regarding the Python random library?",
+    Answer: "The random library can only generate pseudo-random numbers.",
+    Distractor1:
+      "The random library can generate true random numbers based on hardware entropy.",
+    Distractor2:
+      "The random library is primarily used for generating random strings.",
+    Distractor3:
+      "The random library cannot be used to generate random numbers within a specified range.",
+    Explanation:
+      "The random module in Python generates pseudo-random numbers, which are generated by mathematical algorithms and are not truly random but are sufficiently unpredictable for many purposes. To generate truly random numbers, you may need specialized hardware or external services, which are not provided by the random module.",
+    Link: "https://docs.python.org/3/library/random.html"
+  },
+  {
+    Question:
+      "Which of the following Python functions are known for posing security risks?",
+    Answer: "eval()",
+    Distractor1: "print()",
+    Distractor2: "input()",
+    Distractor3: "quit()",
+    Explanation:
+      "If you use the eval() function to get input from an external source you don't know for sure if the code executed is malicious or not. This can pose a security risk to your codebase and it is recommended to avoid using the eval() function.",
+    Link: "https://en.wikipedia.org/wiki/Eval#Python"
+  },
+  {
+    Question:
+      "What will be the output for this code: print([num * num for num in range(10)]) ?",
+    Answer: "[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]",
+    Distractor1: "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",
+    Distractor2: "[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]",
+    Distractor3: "Error",
+    Explanation:
+      "This is a list comprehension that prints a list of squares from 0 to 9. We use list comprehensions to simplify one-liner operations in a for loop",
+    Link: "https://www.freecodecamp.org/news/list-comprehension-in-python-with-code-examples/"
+  },
+  {
+    Question:
+      "In Python, which of the following dunder methods defines the behavior of the addition operator + for objects of a class?",
+    Answer: "__add__",
+    Distractor1: "__len__",
+    Distractor2: "__sub__",
+    Distractor3: "__mul__",
+    Explanation:
+      "Dunder methods (Double underscore) are special methods reserved in Python which affect's the behavior of the object and the interaction of the object with other objects.",
+    Link: "https://youtu.be/eWRfhZUzrAc?si=ehiKx8PbqeW8X504&t=12264"
+  },
+  {
+    Question:
+      "Which of the following statements about Python decorators is false?",
+    Answer: "Decorators are applied to a function at compile time.",
+    Distractor1: "A decorator is a function that takes another function and extends its behavior without explicitly modifying it.",
+    Distractor2: "Decorators can be applied to classes as well as functions.",
+    Distractor3: "Multiple decorators can be applied to a single function.",
+    Explanation:
+      "Decorators in Python are applied at runtime, not at compile time. When a decorated function is defined, the decorator is executed immediately, and the result replaces the original function definition in the namespace.",
+    Link: "https://www.freecodecamp.org/news/python-decorators-explained/"
+
+  }
 ];
 
 export default pythonQuiz;

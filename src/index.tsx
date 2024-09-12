@@ -1,13 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
+import ReactDOM from "react-dom/client";
+import Root from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 
-ReactDOM.render(
+const router = createHashRouter([{ path: "*", Component: Root }]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );
 
 reportWebVitals();

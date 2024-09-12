@@ -1,12 +1,35 @@
 const informationTechnologyQuiz = [
   {
-    Question: "For a Class A IP address, which octet represents the network ID?",
+    Question:
+      "What is the name of the service that runs recursive DNS Servers?",
+    Answer: "Internet Service Providers",
+    Distractor1: "Network Service Providers",
+    Distractor2: "SAML Service Provider",
+    Distractor3: "Application Service Provider",
+    Explanation:
+      "Recursive DNS servers are typically run by Internet Service Providers. These are the companies you pay for your internet access each month.",
+    Link: "https://www.freecodecamp.org/news/what-is-a-dns-server/"
+  },
+  {
+    Question: "What is the use of a DNS Server?",
+    Answer: "Converts a domain name to an IP Address",
+    Distractor1: "Converts an IP Address to a domain name",
+    Distractor2: "Provides access tokens for login in the backend",
+    Distractor3: "Provides refresh tokens for login in the backend",
+    Explanation:
+      "DNS servers are responsible for translating domain names into IP addresses and use them to locate and connect to web servers.",
+    Link: "https://www.freecodecamp.org/news/what-is-a-dns-server/"
+  },
+  {
+    Question:
+      "For a Class A IP address, which octet represents the network ID?",
     Answer: "First octet",
     Distractor1: "Second octet",
     Distractor2: "Third octet",
     Distractor3: "Fourth octet",
-    Explanation: "For Class A IP addresses,  the first octet (8 bits / 1 byte) represents the network ID, and the remaining three octets (24 bits / 3 bytes) represent the host ID.",
-    Link: "https://www.freecodecamp.org/news/subnet-cheat-sheet-24-subnet-mask-30-26-27-29-and-other-ip-address-cidr-network-references/",
+    Explanation:
+      "For Class A IP addresses,  the first octet (8 bits / 1 byte) represents the network ID, and the remaining three octets (24 bits / 3 bytes) represent the host ID.",
+    Link: "https://www.freecodecamp.org/news/subnet-cheat-sheet-24-subnet-mask-30-26-27-29-and-other-ip-address-cidr-network-references/"
   },
   {
     Question:
@@ -496,7 +519,7 @@ const informationTechnologyQuiz = [
     Distractor2: "The network layer",
     Distractor3: "The application layer",
     Explanation:
-      "Layer 1 is the physical layer. There’s a lot of technology in Layer 1 - everything from physical network devices, cabling, to how the cables hook up to the devices.",
+      "Layer 1 is the physical layer. There's a lot of technology in Layer 1 - everything from physical network devices, cabling, to how the cables hook up to the devices.",
     Link: "https://www.freecodecamp.org/news/osi-model-networking-layers-explained-in-plain-english/"
   },
   {
@@ -518,6 +541,51 @@ const informationTechnologyQuiz = [
     Explanation:
       "To flush your DNS, 'ipconfig /flushdns' is the correct command on Windows. This means that your cache has been completely cleared, and fresh versions of any website you visit will be loaded.",
     Link: "https://www.freecodecamp.org/news/flushdns-how-to-flush-dns-with-the-windows-ipconfig-flushdns-command/"
+  },
+  {
+  Question: "What is the primary purpose of the Domain Name System (DNS) in networking?",
+  Answer: "To translate human-readable domain names to IP addresses",
+  Distractor1: "To encrypt data transmitted over the network",
+  Distractor2: "To manage and allocate network bandwidth",
+  Distractor3: "To monitor network traffic for security threats",
+  Explanation: "The Domain Name System (DNS) is responsible for converting domain names, which are easy for humans to remember, into IP addresses that computers use to identify each other on the network.",
+  Link: "https://www.freecodecamp.org/news/what-is-dns"
+  },
+  {
+  Question: "What is the purpose of a firewall in computer networks?",
+  Answer: "To monitor and control incoming and outgoing network traffic based on predetermined security rules",
+  Distractor1: "To compress data before transmission",
+  Distractor2: "To increase the speed of data transfer",
+  Distractor3: "To balance the load between multiple servers",
+  Explanation: "A firewall is a network security device that monitors and filters incoming and outgoing network traffic based on an organization's previously established security policies.",
+  Link: "https://youtu.be/qiQR5rTSshw?si=zqd4y7wIGgscgC7b"
+  },
+  {
+    Question: "What is the function of an API (Application Programming Interface)?",
+    Answer: "To allow different software applications to communicate with each other",
+    Distractor1: "To manage database transactions",
+    Distractor2: "To encrypt and decrypt data",
+    Distractor3: "To monitor network security",
+    Explanation: "An API defines a set of rules and protocols for building and interacting with software applications, enabling them to communicate.",
+    Link: "https://www.freecodecamp.org/news/apis-with-nodejs-and-express-course-in-spanish-for-beginners/"
+  },
+  {
+    Question: "What is the main advantage of using a Content Delivery Network (CDN)?",
+    Answer: "To improve website load times by distributing content closer to users",
+    Distractor1: "To secure websites from hacking",
+    Distractor2: "To increase storage capacity",
+    Distractor3: "To create backups of data",
+    Explanation: "A CDN distributes content across multiple servers worldwide, which helps reduce latency and improve load times for users.",
+    Link: "https://www.freecodecamp.org/news/cdns-speed-up-performance-by-reducing-latency/"
+  },
+  {
+    Question: "What does the term 'virtualization' refer to in IT?",
+    Answer: "Creating virtual versions of physical hardware resources",
+    Distractor1: "Developing virtual reality applications",
+    Distractor2: "Storing data in the cloud",
+    Distractor3: "Encrypting sensitive information",
+    Explanation: "Virtualization involves creating virtual versions of physical hardware such as servers, storage devices, and networks to improve efficiency and scalability.",
+    Link: "https://www.freecodecamp.org/news/linux-server-virtualization-the-basics/"
   }
 ];
 

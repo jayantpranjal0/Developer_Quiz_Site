@@ -1,5 +1,167 @@
 const generalCSQuiz = [
   {
+    Question: "What is the base case in a recursive function?",
+    Answer:
+      "The condition under which the recursive function stops calling itself",
+    Distractor1:
+      "The condition under which the recursive function starts calling itself",
+    Distractor2:
+      "The maximum number of times the recursive function can call itself",
+    Distractor3: "The initial input value to the recursive function",
+    Explanation:
+      "In recursion, the base case is the condition under which the recursive function stops calling itself to prevent an infinite loop. It is crucial for ensuring that the recursion terminates and the program does not run indefinitely.",
+    Link: "https://www.freecodecamp.org/news/recursion-in-javascript/"
+  },
+  {
+    Question:
+      "Which of the following is a primary application of computer vision?",
+    Answer: "Object recognition",
+    Distractor1: "Word processing",
+    Distractor2: "Spreadsheet calculations",
+    Distractor3: "Database management",
+    Explanation:
+      "Computer vision primarily deals with enabling machines to interpret and make decisions based on visual data. Object recognition is a fundamental application of computer vision where the system identifies objects within an image or video.",
+    Link: "https://www.freecodecamp.org/news/computer-vision-js-frameworks-you-need-to-know-b233996103ce/"
+  },
+  {
+    Question:
+      "What is the average time complexity of an element insertion in a hash table?",
+    Answer: "O(1)",
+    Distractor1: "O(logn)",
+    Distractor2: "O(n)",
+    Distractor3: "O(n^2)",
+    Explanation:
+      "The average time complexity of an element insertion in a hash table is O(1). Unlike arrays, hash tables use a hashing function to generate a unique key or index for each element, ensuring constant time for element insertion.",
+    Link: "https://www.freecodecamp.org/news/javascript-hash-table-associative-array-hashing-in-js/"
+  },
+  {
+    Question:
+      "Which of the following methods can be used to solve the N-Queens problem?",
+    Answer: "Backtracking",
+    Distractor1: "Greedy Paradigm",
+    Distractor2: "Divide and Conquer",
+    Distractor3: "Dynamic Programming",
+    Explanation:
+      "Backtracking is used to solve the N-Queens problem based on the condition that no two queens can be present in the same row, column or diagonal.",
+    Link: "https://youtu.be/A80YzvNwqXA?si=Eue2Exdk1zT2SUm5&t=511"
+  },
+  {
+    Question:
+      "Which sorting algorithm has an average time complexity of O(nlogn)?",
+    Answer: "Quick sort",
+    Distractor1: "Bubble sort",
+    Distractor2: "Insertion sort",
+    Distractor3: "Selection sort",
+    Explanation:
+      "Quick sort has an average time complexity of O(nlogn), making it efficient for sorting large datasets.",
+    Link: "https://www.freecodecamp.org/news/sorting-algorithms-explained-with-examples-in-python-java-and-c/#quick-sort"
+  },
+  {
+    Question:
+      "In a graph, which data structure is best suited for finding the shortest path between two vertices?",
+    Answer: "Priority Queue",
+    Distractor1: "Stack",
+    Distractor2: "String",
+    Distractor3: "Heap",
+    Explanation:
+      "Dijkstra's algorithm, which is used to find the shortest path in a graph, typically employs a priority queue to efficiently select the next vertex with the smallest distance.",
+    Link: "https://www.freecodecamp.org/news/dijkstras-shortest-path-algorithm-visual-introduction/"
+  },
+  {
+    Question:
+      "What is the time complexity of inserting an element into a linked list at the beginning?",
+    Answer: "O(1)",
+    Distractor1: "O(log n)",
+    Distractor2: "O(n)",
+    Distractor3: "O(n2)",
+    Explanation:
+      "The time complexity involved to insert a node at the head of the linked list as well as to append at the tail is O(1).",
+    Link: "https://www.freecodecamp.org/news/data-structures-101-linked-lists-254c82cf5883/"
+  },
+  {
+    Question: "What is the time complexity of Bellman Ford's Algorithm?",
+    Answer: "O(V*E)",
+    Distractor1: "O(V)",
+    Distractor2: "O(E)",
+    Distractor3: "O(V+E)",
+    Explanation:
+      "Bellman Ford's algorithm is a shortest path finding algorithm for graphs that can have negative weights having the optimal time complexity of O(V*E).",
+    Link: "https://www.freecodecamp.org/news/graph-algorithms-and-data-structures-explained-with-java-and-c-examples/"
+  },
+  {
+    Question: "What is the acceptable range of Balance Factor for an AVL tree?",
+    Answer: "[-1,1]",
+    Distractor1: "[0,1]",
+    Distractor2: "[-1,0]",
+    Distractor3: "None of the above",
+    Explanation:
+      " The self balancing property of an AVL tree is maintained by the balance factor. The value of balance factor should always be -1, 0 or +1",
+    Link: "https://forum.freecodecamp.org/t/algorithms-avl-trees/297458"
+  },
+  {
+    Question:
+      "Which approach involves duplicating the argument's value into the function's formal parameter?",
+    Answer: "Call by Value",
+    Distractor1: "Call by pointer",
+    Distractor2: "Call by reference",
+    Distractor3: "Call by address",
+    Explanation:
+      "In the call-by-value approach, a replica of the argument's value is generated, and any modifications made to the formal parameter within the function do not affect the original argument outside of the function, as the function operates on its own isolated copy of the data.",
+    Link: "https://www.freecodecamp.org/news/understanding-by-reference-vs-by-value-d49139beb1c4/"
+  },
+  {
+    Question:
+      "Which of the following algorithms is used to find the shortest path between two points in a connected weighted graph?",
+    Answer: "Kruskal Algorithm",
+    Distractor1: "Floyd's Tortoise-Hare Algorithm",
+    Distractor2: "Greedy Algorithms",
+    Distractor3: "Prims Algorithms",
+    Explanation:
+      "Kruskal Algorithm is used to find the shortest path between two points in a connected weighted graph.",
+    Link: "https://en.wikipedia.org/wiki/Kruskal%27s_algorithm"
+  },
+  {
+    Question: "What does NFC stands for?",
+    Answer: "Near-Field Communication",
+    Distractor1: "Narrow Field Communication",
+    Distractor2: "Near-Fragile Communication",
+    Distractor3: "Nearly Factory Communication",
+    Explanation:
+      "NFC stands for near-field communication and it is the standard for devices to communicate with each other wirelessly from a very close distance.",
+    Link: "https://www.freecodecamp.org/news/what-is-nfc-near-field-communication-uses-chips-tags-and-readers-explained/"
+  },
+  {
+    Question: "What is the best algorithm for matrix multiplication?",
+    Answer: "Strassen's Algorithm",
+    Distractor1: "Multiplication algorithm",
+    Distractor2: "Divide and Conquer Technique",
+    Distractor3: "None of the above",
+    Explanation:
+      "Strassen's algorithm reduces the number of multiplication and addition in a given matrix and results in a time complexity of O(2.81)",
+    Link: "https://en.wikipedia.org/wiki/Strassen_algorithm#"
+  },
+  {
+    Question: "Which of the following sorting algorithms is stable in nature?",
+    Answer: "Merge Sort",
+    Distractor1: "Heap Sort",
+    Distractor2: "Quick Sort",
+    Distractor3: "Selection sort",
+    Explanation:
+      "Stable sorting algorithms maintain the relative order of elements with equal values, or keys. Merge sort is stable in nature.",
+    Link: "https://www.freecodecamp.org/news/sorting-algorithms-explained-with-examples-in-python-java-and-c/#classification-of-a-sorting-algorithm"
+  },
+  {
+    Question:
+      "Which of the following sorting algorithms has the same best-case and worst-case time complexities?",
+    Answer: "Merge Sort",
+    Distractor1: "Bubble Sort",
+    Distractor2: "Quick Sort",
+    Distractor3: "Selection sort",
+    Explanation:
+      "Merge sort has a time complexity of O(nlogn) in all cases - best, average and worst.",
+    Link: "https://www.freecodecamp.org/news/merge-sort-algorithm-python-and-java-examples-with-time-complexity/"
+  },
+  {
     Question: "What is Object-Oriented Programming?",
     Answer:
       "OOP is a programming pattern that is built around objects or entities.",
@@ -33,17 +195,6 @@ const generalCSQuiz = [
     Explanation:
       "Merge sort uses the Divide and Conquer paradigm and is not considered an in-place sorting algorithm.",
     Link: "https://en.wikipedia.org/wiki/In-place_algorithm"
-  },
-  {
-    Question: "What is Object-Oriented Programming?",
-    Answer:
-      "OOP is a programming pattern that is built around objects or entities.",
-    Distractor1: "OOP is a topological paradigm to program things",
-    Distractor2: "OOP is a set of sorting algorithms",
-    Distractor3: "OOP is a list of Bitwise operators",
-    Explanation:
-      "OOP is a programming pattern that is built around objects or entities",
-    Link: "https://www.freecodecamp.org/news/what-is-object-oriented-programming/"
   },
   {
     Question:
@@ -150,14 +301,14 @@ const generalCSQuiz = [
   },
   {
     Question: "Which of the following is true for a graph?",
-    Answer: "A graph is bipartite if and only if it is two colourable.",
+    Answer: "A graph is bipartite if and only if it is two colorable.",
     Distractor1:
       "A graph is bipartite if and only if it does not contain an even length cycle.",
-    Distractor2: "A graph is bipartite if and only if it is three colourable.",
+    Distractor2: "A graph is bipartite if and only if it is three colorable.",
     Distractor3:
       "A graph is bipartite if and only if it is a directed acyclic graph",
     Explanation:
-      "If a graph is two colourable then the nodes with same colour can be grouped together to form two different groups.",
+      "If a graph is two colorable then the nodes with same color can be grouped together to form two different groups.",
     Link: "https://www.youtube.com/watch?v=09_LlHjoEiY&list=PLWKjhJtqVAbn5emQ3RRG8gEBqkhf_5vxD&t=440s"
   },
   {
@@ -241,7 +392,7 @@ const generalCSQuiz = [
   {
     Question: "Which of the following is the most correct statement?",
     Answer: "Topological sort is possible only for a Directed Acyclic Graph",
-    Distractor1: "Toplogical sort is just an another name for BFS",
+    Distractor1: "Topological sort is just an another name for BFS",
     Distractor2: "All undirected graphs have topological ordering",
     Distractor3: "A cyclic graph also has topological ordering.",
     Explanation:
@@ -640,15 +791,6 @@ const generalCSQuiz = [
     Explanation:
       "Random Access Memory is a type of short term memory that stores data that computer processors can access frequently.",
     Link: "https://www.freecodecamp.org/news/ram-definition/"
-  },
-  {
-    Question: "What is an Algorithm?",
-    Answer: "A set of steps to solve a problem",
-    Distractor1: "A programming language",
-    Distractor2: "A collection of fonts",
-    Distractor3: "A data type",
-    Explanation: "An algorithm is a set of steps to solve a problem.",
-    Link: "https://www.freecodecamp.org/news/algorithm-definition/"
   },
   {
     Question: "What unit is used to measure the speed of a CPU?",
@@ -1145,7 +1287,7 @@ const generalCSQuiz = [
     Answer: "Abstraction, Encapsulation, Inheritance, and Polymorphism.",
     Distractor1: "Objects, Methods, Properties and Fields.",
     Distractor2: "Immutability, Purity, Transparency and State.",
-    Distractor3: "Declaration, Modeling, Evaluation and Implementaion.",
+    Distractor3: "Declaration, Modeling, Evaluation and Implementation.",
     Explanation:
       "Abstraction, encapsulation, inheritance, and polymorphism are software design principles to help you write clean object-oriented code.",
     Link: "https://www.freecodecamp.org/news/four-pillars-of-object-oriented-programming/"
@@ -1204,7 +1346,7 @@ const generalCSQuiz = [
     Link: "https://www.freecodecamp.org/news/an-intro-to-advanced-sorting-algorithms-merge-quick-radix-sort-in-javascript-b65842194597/"
   },
   {
-    Question: "What is the advanatge of using linked lists over arrays?",
+    Question: "What is the advantage of using linked lists over arrays?",
     Answer: "Linked lists helps in faster insertions and deletions than arrays",
     Distractor1: "Memory usage in linked lists is less than arrays",
     Distractor2: "Reverse traversal is possible in singly linked lists",
@@ -1240,7 +1382,7 @@ const generalCSQuiz = [
       "Which algorithm finds the shortest path between nodes in a graph?",
     Answer: "Dijkstra's Algorithm",
     Distractor1: "Rabin-Karp Algorithm",
-    Distractor2: "Binary Search Algoritm",
+    Distractor2: "Binary Search Algorithm",
     Distractor3: "Quicksort Algorithm",
     Explanation:
       "Dijkstra's Algorithm can find the shortest path from a node (called the 'source node') to all other nodes in the graph, producing a shortest-path tree.",
@@ -1283,7 +1425,8 @@ const generalCSQuiz = [
     Link: "https://www.freecodecamp.org/news/learn-big-o-notation/"
   },
   {
-    Question: "What is the worst case time complexity for binary and linear search?",
+    Question:
+      "What is the worst case time complexity for binary and linear search?",
     Answer: "binary search is O(logn) and linear search is O(n)",
     Distractor1: "binary search is O(n) and linear search is O(logn)",
     Distractor2: "binary search is O(n) and linear search is O(n)",
@@ -1292,6 +1435,480 @@ const generalCSQuiz = [
       "The worst case time complexity for linear search O(n) because we have to iterate through n elements. The worst case time complexity for binary search is O(logn) because it is a divide and conquer algorithm.",
     Link: "https://www.freecodecamp.org/news/search-algorithms-linear-and-binary-search-explained/"
   },
+  {
+    Question: "What is Proprietary Software?",
+    Answer: "Software which is owned by an organization or an individual.",
+    Distractor1:
+      "Software where the code is publicly available for people to modify, and share.",
+    Distractor2: "Software where the code can be used by everyone for free",
+    Distractor3: "Software that has only been developed by Oracle",
+    Explanation:
+      "The original authors of proprietary software can modify its code. Users of this type of software have to agree not to alter it in any way unless they have permission from the owners to do so.",
+    Link: "https://www.freecodecamp.org/news/what-is-open-source-software-explained-in-plain-english"
+  },
+  {
+    Question: "What is Open Source Software?",
+    Answer:
+      "A type of software where the code is publicly available for people to view, modify, and share.",
+    Distractor1: "Software owned by Big Tech Companies",
+    Distractor2: "Software developed by Facebook",
+    Distractor3:
+      "Software where the code is only available to a select few people",
+    Explanation:
+      "Open Source Software is code that is publicly available for people to view, modify, and share. One example of open source would be freeCodeCamp.",
+    Link: "https://www.freecodecamp.org/news/what-is-open-source-software-explained-in-plain-english"
+  },
+  {
+    Question: "How does the Bubble Sort algorithm work?",
+    Answer:
+      "This algorithm traverses a list, compares adjacent values, and swaps them if they are not in the correct order.",
+    Distractor1:
+      "This algorithm divides the list into different buckets and sorts these buckets individually.",
+    Distractor2:
+      "This algorithm selects the current smallest element, and swaps it into place.",
+    Distractor3: "This algorithm breaks down an unsorted list into two halves.",
+    Explanation:
+      "The Bubble Sort algorithm traverses a list, compares adjacent values, and swaps them if they are not in the correct order.",
+    Link: "https://www.freecodecamp.org/news/sorting-algorithms-explained-with-examples-in-python-java-and-c"
+  },
+  {
+    Question:
+      "What is the underlining process behind the Merge Sort algorithm?",
+    Answer: "Recursion",
+    Distractor1: "String matching and parsing",
+    Distractor2: "backtracking",
+    Distractor3: "graph traversal",
+    Explanation:
+      "The Merge Sort algorithm works by recursively breaking down an unsorted list into two halves until it reaches a point where it can no longer be broken down.",
+    Link: "https://www.freecodecamp.org/news/how-to-sort-recursively-in-python"
+  },
+  {
+    Question: "What is a String?",
+    Answer: "A data type that comprises of a sequence of characters",
+    Distractor1: "An Array indicator for programming languages",
+    Distractor2: "A Data Structure for data arrangement",
+    Distractor3: "a programming language for complex tasks",
+    Explanation:
+      "A string is a data type that can contain many different characters. A string is written as a series of characters between single or double quotes.",
+    Link: "https://www.freecodecamp.org/news/how-to-lowercase-a-string-in-javascript-tolowercase-in-js/"
+  },
+  {
+    Question: "What is the worst case time complexity for Bubble sort?",
+    Answer: "O(n^2)",
+    Distractor1: "O(logn)",
+    Distractor2: "O(n)",
+    Distractor3: "O(nlogn)",
+    Explanation:
+      "Bubble sort has a worst case time complexity of O(n^2), which is slow compared to other sorting algorithms.",
+    Link: "https://www.freecodecamp.org/news/bubble-sort/"
+  },
+  {
+    Question: "Which HTTP status code returns 'I'm a teapot'?",
+    Answer: "418",
+    Distractor1: "000",
+    Distractor2: "007",
+    Distractor3: "128",
+    Explanation:
+      "HTTP status code 418 returns 'I'm a teapot' and it is a reference to a 1998 April Fools' joke.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418#"
+  },
+  {
+    Question:
+      "Which of the following time complexities is considered to be the fastest?",
+    Answer: "O(1)",
+    Distractor1: "O(logn)",
+    Distractor2: "O(n)",
+    Distractor3: "O(nlogn)",
+    Explanation:
+      "O(1) is independent of input size so it remains in constant time regardless of the size of the input.",
+    Link: "https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/"
+  },
+  {
+    Question: "What is the worst case time complexity for Selection sort?",
+    Answer: "O(n*n)",
+    Distractor1: "O(n*logn)",
+    Distractor2: "O(n^3)",
+    Distractor3: "O(n+k)",
+    Explanation:
+      "Selection sort has a worst case time complexity of O(n*n), due to the two nested loops.",
+    Link: "https://forum.freecodecamp.org/t/the-selection-sort-algorithm-explained-with-examples/16106"
+  },
+  {
+    Question: "Which of the following is a dynamically typed language?",
+    Answer: "Python",
+    Distractor1: "C",
+    Distractor2: "Java",
+    Distractor3: "C++",
+    Explanation:
+      "Statically-typed languages like C, C++, and Java, perform type checking at compile time whereas dynamically-typed languages like Python and JavaScript  perform type checking at runtime.",
+    Link: "https://www.freecodecamp.org/news/why-use-static-types-in-javascript-part-1-8382da1e0adb/#:~:text=series%20is%20about.-,First%2C%20a%20definition,-The%20quickest%20way"
+  },
+  {
+    Question:
+      "If you were to solve the classic FizzBuzz challenge, what would be the output for the 15th iteration?",
+    Answer: "FizzBuzz",
+    Distractor1: "Fizz",
+    Distractor2: "Buzz",
+    Distractor3: "BuzzFizz",
+    Explanation:
+      "FizzBuzz is a common coding challenge where you will need to write a loop that iterates from 1 to N while outputting 'Fizz' at multiples of 3, 'Buzz' at multiples of 5 and 'FizzBuzz' at multiples of 3 and 5. Position 15 has the word FizzBuzz because it is a multiple of both 3 and 5.",
+    Link: "https://en.wikipedia.org/wiki/Fizz_buzz"
+  },
+  {
+    Question:
+      "What's the Big O notation of an algorithm that increases the running time linearly with the input size?",
+    Answer: "O(n)",
+    Distractor1: "O(n^2)",
+    Distractor2: "O(1)",
+    Distractor3: "O(log n)",
+    Explanation:
+      "The letter n represents the input size, and the big O represents the increase of the running time.",
+    Link: "https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/"
+  },
+  {
+    Question: "Why are sorting algorithms important in programming?",
+    Answer:
+      "Sorting algorithms are important because they can reduce the complexity of a problem.",
+    Distractor1:
+      "Sorting algorithms are important because they are only used to arrange data in alphabetical order",
+    Distractor2:
+      "Sorting algorithms are important because they are frequently asked in interviews.",
+    Distractor3:
+      "Sorting algorithms are not important because there are faster ways to solve problems",
+    Explanation:
+      "Sorting algorithms are important because they can reduce the complexity of a problem by arranging data in a specific order, which can make it easier to solve and streamline various tasks and processes.",
+    Link: "https://www.freecodecamp.org/news/sorting-algorithms-explained-with-examples-in-python-java-and-c/#classification-of-a-sorting-algorithm"
+  },
+  {
+    Question:
+      "Which of the following examples shows the correct syntax for kebab case?",
+    Answer: "number-of-donuts",
+    Distractor1: "number_of_donuts",
+    Distractor2: "numberOfDonuts",
+    Distractor3: "number*of*donuts",
+    Explanation: "Kebab case separates each lowercase word by dashes.",
+    Link: "https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/"
+  },
+  {
+    Question:
+      "Which of the following type of trees is also known as a 'large key' tree?",
+    Answer: "B-Tree",
+    Distractor1: "Binary Search Tree",
+    Distractor2:
+      "Adelson-Velsky and Landis Tree (AVL Tree/Height balanced tree)",
+    Distractor3: "Ternary Tree",
+    Explanation:
+      "B-Trees are identified by their capacity to hold a significant quantity of keys within a single node, leading to their alternative name, large key trees.",
+    Link: "https://www.freecodecamp.org/news/b-tree-self-balancing-search-index-data-structures-explained/"
+  },
+  {
+    Question:
+      "Which data structure is used to implement an auto-complete feature?",
+    Answer: "Trie",
+    Distractor1: "Linked List",
+    Distractor2: "Stack",
+    Distractor3: "Tree",
+    Explanation:
+      "A Trie is a tree based data structure where each node stores a character performing efficient search operations on them",
+    Link: "https://en.wikipedia.org/wiki/Trie"
+  },
+  {
+    Question:
+      "Which of the following tree traversal algorithms has an O(1) space complexity?",
+    Answer: "Morris algorithm",
+    Distractor1: "Bellman-Ford algorithm",
+    Distractor2: "Floyd Warshall algorithm",
+    Distractor3: "Dijkstra's algorithm",
+    Explanation:
+      "Morris traversal is a tree traversal algorithm that does not employ the use of recursion or a stack. In this traversal, links are created as successors and nodes are printed using these links.",
+    Link: "https://en.wikipedia.org/wiki/Tree_traversal#Morris_in-order_traversal_using_threading"
+  },
+  {
+    Question:
+      "Which of the following search algorithms is best for finding the minimum or maximum of an unimodal function?",
+    Answer: "Ternary Search",
+    Distractor1: "Binary Search",
+    Distractor2: "Linear Search",
+    Distractor3: "Sentinel Linear Search",
+    Explanation:
+      "Ternary Search is similar to binary search but distinguishes itself through a trisection approach giving us three possibilities for the two points m1 and m2 f(m1) < f(m2), f(m1) > f(m2), f(m1) = f(m2)",
+    Link: "https://en.wikipedia.org/wiki/Ternary_search"
+  },
+  {
+    Question:
+      "In the RotateLeft or RotateRight function in an AVL tree, when do we update the root of the tree?",
+    Answer: "when the Parent of the node becomes nullptr",
+    Distractor1: "when the node becomes nullptr",
+    Distractor2: "when the node becomes a leaf of the tree",
+    Distractor3: "when the height balance is restored ",
+    Explanation:
+      "When the parent of the node becomes nullptr, this means the  node is the root of the tree.  So when we make a right or left rotation, we need to update the root of the tree with the appropriate child of the node.",
+    Link: "https://forum.freecodecamp.org/t/algorithms-avl-trees/297458"
+  },
+  {
+    Question: "In a Red-Black Tree, every tree leaf node is _________",
+    Answer: "Black",
+    Distractor1: "Red",
+    Distractor2: "Red or Black",
+    Distractor3: "White",
+    Explanation:
+      "A Red-Black Tree is a self-balancing Binary Search Tree (BST) and every tree leaf node is always black.",
+    Link: "https://forum.freecodecamp.org/t/red-black-trees/297473"
+  },
+  {
+    Question:
+      "What is a data structure that consists of nodes, where each node has data and a reference to the next node in the sequence?",
+    Answer: "Linked List",
+    Distractor1: "Vector",
+    Distractor2: "Stack",
+    Distractor3: "Heap",
+    Explanation:
+      "A Linked List contains nodes and each node has data and a reference to next node so that it can have access to the data of its next node and we can get the information of all nodes by iterating the node until it reaches nullptr.",
+    Link: "https://www.freecodecamp.org/news/how-linked-lists-work/"
+  },
+  {
+    Question: "What is the basis for a Red-Black tree?",
+    Answer: "2-3-4 tree",
+    Distractor1: "AVL Tree",
+    Distractor2: "Red-Black Graphs",
+    Distractor3: "Linked List",
+    Explanation:
+      "A Red-Black Tree is based upon a 2-3-4 tree where the red nodes collapse into the black node above them to form a 2-3-4 node.",
+    Link: "https://en.wikipedia.org/wiki/Red%E2%80%93black_tree"
+  },
+  {
+    Question:
+      "What are the space and time complexities for Red-Black Trees where n are the number of entries?",
+    Answer: "O(n), O(logn)",
+    Distractor1: "O(n), O(n^2)",
+    Distractor2: "O(logn), O(logn)",
+    Distractor3: "O(nlogn), O(1)",
+    Explanation:
+      "As we have n Nodes we get a Space Complexity of O(n).  The (re-)balancing is not perfect, but guarantees searching in O(log n). The insert and delete operations, along with the tree rearrangement and recoloring, are also performed in O(log n) time",
+    Link: "https://en.wikipedia.org/wiki/Red%E2%80%93black_tree"
+  },
+  {
+    Question:
+      "Which of the following algorithms is used in Identifying a circular linked list?",
+    Answer: "Floyd's Tortoise-Hare Algorithm",
+    Distractor1: "Dijkstra's Algorithm",
+    Distractor2: "Greedy Algorithms",
+    Distractor3: "Linear Search Algorithm",
+    Explanation:
+      "Floyd's Tortoise-Hare Algorithm is for finding a circular Linked list. The Hare is a pointer which jumps 2 nodes while the Tortoise moves one node at a time. In case they both meet, we get a circular linked list. If any of them becomes nullptr, then there is no Circular Linked list.",
+    Link: "https://en.wikipedia.org/wiki/Cycle_detection"
+  },
+  {
+    Question:
+      "What is the time complexity of the Floyd-Warshall algorithm for finding all shortest paths in a weighted graph?",
+    Answer: "O(V^3)",
+    Distractor1: "O(V log V)",
+    Distractor2: "O(V^2 log V)",
+    Distractor3: "O(E log V)",
+    Explanation:
+      "The Floyd-Warshall algorithm has a time complexity of O(V^3), where V is the number of vertices in the graph.",
+    Link: "https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm"
+  },
+  {
+    Question:
+      "In the context of machine learning, what is the bias-variance trade-off?",
+    Answer:
+      "The balance between underfitting (high bias) and overfitting (high variance) in a model.",
+    Distractor1: "A technique to reduce overfitting in neural networks.",
+    Distractor2:
+      "The trade-off between precision and recall in classification.",
+    Distractor3:
+      "The relationship between accuracy and complexity in algorithms.",
+    Explanation:
+      "The bias-variance trade-off refers to finding the right balance in a machine learning model to avoid underfitting (high bias) and overfitting (high variance).",
+    Link: "https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff"
+  },
+  {
+    Question: "What is the purpose of a Bloom filter in computer science?",
+    Answer:
+      "To test whether an element is a member of a set with a small probability of false positives.",
+    Distractor1: "To compress data for efficient storage.",
+    Distractor2: "To encrypt data for secure transmission.",
+    Distractor3: "To hash passwords for authentication.",
+    Explanation:
+      "A Bloom filter is a data structure used to test membership in a set with a small probability of false positives, making it suitable for tasks like spell checking and network routing.",
+    Link: "https://en.wikipedia.org/wiki/Bloom_filter"
+  },
+  {
+    Question: "What is the purpose of dynamic programming in algorithm design?",
+    Answer:
+      "To solve problems by breaking them into smaller subproblems and storing their solutions to avoid redundant calculations.",
+    Distractor1: "To optimize code for parallel processing.",
+    Distractor2:
+      "To reduce the time complexity of algorithms through loop unrolling.",
+    Distractor3: "To balance load in distributed systems.",
+    Explanation:
+      "Dynamic programming is a technique used to solve problems by breaking them into smaller subproblems and storing their solutions, reducing redundant calculations and improving efficiency.",
+    Link: "https://en.wikipedia.org/wiki/Dynamic_programming"
+  },
+  {
+    Question:
+      "What is the significance of P vs. NP problem in computer science and mathematics?",
+    Answer:
+      "It addresses the question of whether every problem whose solution can be verified quickly can also be solved quickly.",
+    Distractor1: "It defines the class of polynomial-time algorithms.",
+    Distractor2: "It characterizes the complexity of sorting algorithms.",
+    Distractor3:
+      "It studies the relationship between parallel and distributed computing.",
+    Explanation:
+      "The P vs. NP problem is a fundamental question in computer science and mathematics, addressing the efficiency of solving problems and the class of problems that can be solved efficiently.",
+    Link: "https://en.wikipedia.org/wiki/P_versus_NP_problem"
+  },
+  {
+    Question: "What is the use of a priority queue?",
+    Answer:
+      "A priority queue manages elements based on priority, ensuring higher priority items are processed first.",
+    Distractor1: "It's a queue that organizes elements by their value.",
+    Distractor2: "It's a fixed-size queue.",
+    Distractor3: "It only accepts elements of the same type.",
+    Explanation:
+      "A priority queue is essential in scenarios where certain tasks need to be handled in order of importance or urgency.",
+    Link: "https://www.freecodecamp.org/news/priority-queue-implementation-in-java/"
+  },
+  {
+    Question: "What is a binary search algorithm?",
+    Answer:
+      "Binary search efficiently finds values in sorted arrays by dividing the search space in half until the target is found or determined to be absent.",
+    Distractor1: "Binary search is used for searching unsorted arrays.",
+    Distractor2: "Binary search only works with non-integer values.",
+    Distractor3: "Binary search has a time complexity of O(n).",
+    Explanation:
+      "Binary search is a fundamental and highly efficient algorithm for searching in sorted data structures like arrays and is based on the principle of divide and conquer.",
+    Link: "https://www.freecodecamp.org/news/binary-search-algorithm-and-time-complexity-explained/"
+  },
+  {
+    Question: "What is a hash table in computer science?",
+    Answer:
+      "A hash table stores key-value pairs, using a hash function to enable fast data retrieval.",
+    Distractor1:
+      "A hash table is a data structure that only stores keys, not values.",
+    Distractor2: "A hash table is primarily used for sorting data.",
+    Distractor3:
+      "A hash table is limited to a fixed size and cannot grow dynamically.",
+    Explanation:
+      "Hash tables are widely used in computer science for implementing associative arrays, databases, and various applications that require fast data access.",
+    Link: "https://www.freecodecamp.org/news/hash-tables/"
+  },
+  {
+    Question:
+      "What is the difference between a stack and a queue in data structures?",
+    Answer:
+      "A stack (LIFO) removes the last element added first, while a queue (FIFO) removes the first element added first.",
+    Distractor1:
+      "A stack and a queue have the same behavior and are interchangeable in data structures.",
+    Distractor2:
+      "A stack and a queue are both unordered collections of elements.",
+    Distractor3: "A stack and a queue are not used in computer programming.",
+    Explanation:
+      "A stack is a linear data structure that uses the Last in First Out principle while a queue uses the First In First Out principle.  Understanding the differences between stacks and queues is essential for choosing the right data structure for specific algorithms and applications.",
+    Link: "https://www.freecodecamp.org/news/linear-data-structures-linked-lists-stacks-and-queues-in-javascript-a13c7591ad87/"
+  },
+  {
+    Question:
+      "What is the time complexity of Kruskal's algorithm in terms of the number of edges (E) and vertices (V) in the graph?",
+    Answer: "O(E log V)",
+    Distractor1: "O(E)",
+    Distractor2: "O(E log V)",
+    Distractor3: "O(V log E)",
+    Explanation:
+      "E is at most O(V^2) in a complete graph, and log(V^2) is equivalent to 2 * log(V), the time complexity is often expressed as O(E log V). This is because, in most cases, E is significantly smaller than V^2, and it simplifies to O(E log V).",
+    Link: "https://en.wikipedia.org/wiki/Kruskal%27s_algorithm"
+  },
+  {
+    Question: "What is a key characteristic of a complete binary tree?",
+    Answer: "It has the maximum number of nodes for a given height",
+    Distractor1: "All nodes have exactly two children.",
+    Distractor2: "The last level may have gaps in node positions",
+    Distractor3: "It has the maximum number of nodes for a given height",
+    Explanation:
+      "The key characteristic of a complete binary tree is that it contains the maximum possible number of nodes for a tree of its height. This maximizes the number of nodes that can be accommodated while maintaining the structure's completeness.",
+    Link: "https://en.wikipedia.org/wiki/Binary_tree#Types_of_binary_trees"
+  },
+  {
+    Question:
+      "What is the postfix notation for the infix expression: 3 * (5 + 2)?",
+    Answer: "3 5 2 * +",
+    Distractor1: "3 5 2 + *",
+    Distractor2: "3 5 + 2 *",
+    Distractor3: "3 5 2 * +",
+    Explanation:
+      'The postfix notation for the infix expression "3 * (5 + 2)" is "3 5 2 * +". This notation represents the same mathematical expression and can be directly evaluated using a stack-based algorithm.',
+    Link: "https://youtu.be/B31LgI4Y4DQ?si=R1q51bZBH-OWHot1&t=15255"
+  },
+  {
+    Question:
+      "Which data structure allows for efficient retrieval of data based on a key?",
+    Answer: "Hash Table",
+    Distractor1: "Binary Tree",
+    Distractor2: "Linked List",
+    Distractor3: "Queue",
+    Explanation:
+      "A hash table allows for efficient data retrieval based on a key through the use of a hash function.",
+    Link: "https://en.wikipedia.org/wiki/Hash_table"
+  },
+  {
+    Question: "What is the Halting problem in computability theory?",
+    Answer: "The Halting Problem is an unsolvable problem in computer science",
+    Distractor1: "The Halting Problem is a type of computer virus.",
+    Distractor2: "The Halting Problem is a cryptographic challenge.",
+    Distractor3: "The Halting Problem is used for code debugging.",
+    Explanation:
+      "The Halting Problem is significant in theoretical computer science as it demonstrates the existence of problems that cannot be solved algorithmically.",
+    Link: "https://en.wikipedia.org/wiki/Halting_problem"
+  },
+  {
+    Question: "What is load balancing in LLD(Low Level Design)?",
+    Answer: " Distribution of  network traffic evenly across multiple servers",
+    Distractor1: "An Internet Protocol",
+    Distractor2: "Removing excess load from a server",
+    Distractor3: "Allocating more resources to a single server",
+    Explanation:
+      "Load balancing is a technique used in computing and networking to distribute incoming network traffic or workload across multiple servers, devices, or resources. The primary goal of load balancing is to optimize resource utilization, maximize throughput, minimize response time, and ensure high availability of services.",
+    Link: "https://en.wikipedia.org/wiki/Load_balancing_(computing)"
+  },
+  {
+    Question:
+      "What does NTFS stand for in the context of Windows file systems?",
+    Answer: "New Technology File System",
+    Distractor1: "Network Time File System",
+    Distractor2: "Network Transfer File System",
+    Distractor3: "New Transfer File System",
+    Explanation:
+      "NTFS, which stands for NT file system and the New Technology File System, is the file system that the Windows NT operating system (OS) uses for storing and retrieving files on hard disk drives (HDDs) and solid-state drives (SSDs). It is the default file system for the Windows NT family and it is developed by Microsoft.",
+    Link: "https://en.wikipedia.org/wiki/NTFS"
+  },
+  {
+    Question: "Which data structure uses the LIFO (Last In, First Out) principle?",
+    Answer: "Stack",
+    Distractor1: "Queue",
+    Distractor2: "Linked List",
+    Distractor3: "Hash Table",
+    Explanation: "A stack is a data structure that follows the Last In, First Out (LIFO) principle, meaning the last element added to the stack will be the first one to be removed.",
+    Link: "https://www.freecodecamp.org/news/linear-data-structures-linked-lists-stacks-and-queues-in-javascript-a13c7591ad87/"
+  },
+  {
+    Question: "In object-oriented programming, what is encapsulation?",
+    Answer: "The concept of wrapping data and methods that operate on the data within a single unit or class",
+    Distractor1: "The ability of a function to call itself",
+    Distractor2: "The ability to define multiple methods with the same name",
+    Distractor3: "The concept of using symbols to represent operations and data",
+    Explanation: "Encapsulation is an object-oriented programming principle that bundles the data (attributes) and methods (functions) that operate on the data into a single unit or class, and restricts direct access to some of the object's components.",
+    Link: "https://www.freecodecamp.org/news/a-guide-to-object-oriented-programming-principles/"
+  },
+  {
+    Question: "What is polymorphism in the context of object-oriented programming?",
+    Answer: "The ability of different objects to respond uniquely to the same method call",
+    Distractor1: "The process of defining a new class based on an existing class",
+    Distractor2: "The concept of hiding the internal state of an object",
+    Distractor3: "The ability to create multiple methods with the same name but different implementations",
+    Explanation: "Polymorphism is an object-oriented programming principle that allows objects of different classes to be treated as objects of a common super class. It enables a single method to behave differently based on the object that it is acting upon.",
+    Link: "https://www.freecodecamp.org/news/a-guide-to-object-oriented-programming-principles/"
+  }  
 ];
 
 export default generalCSQuiz;

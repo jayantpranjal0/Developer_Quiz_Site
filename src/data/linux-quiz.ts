@@ -1,5 +1,263 @@
 const linuxQuiz = [
   {
+    Question: "Which of the following commands is used to create a new window for editing a file?",
+    Answer: "gvim",
+    Distractor1: "vim",
+    Distractor2: "gedit",
+    Distractor3: "nvim",
+    Explanation: "The gvim command causes the editor to open a new window for editing the file whereas the vim command causes the editing to occur inside your command window.",
+    Link: "https://vimdoc.sourceforge.net/htmldoc/usr_02.html#02.1"
+  },
+  {
+    Question:
+      "Which command allows you to run commands in a different root directory?",
+    Answer: "chroot",
+    Distractor1: "chmod",
+    Distractor2: "cd",
+    Distractor3: "cp",
+    Explanation:
+      "The chroot, short for “change root”, command changes the root directory and allows you to run commands in a different root directory.",
+    Link: "https://www.freecodecamp.org/news/helpful-linux-commands-you-should-know"
+  },
+  {
+    Question: "What is the primary purpose of the /etc/passwd file in Linux?",
+    Answer:
+      "Storing user account information, including usernames, UIDs, home directories, and default shells.",
+    Distractor1: "Storing system configuration settings.",
+    Distractor2: "Managing software packages.",
+    Distractor3: "Storing system log files.",
+    Explanation:
+      "The /etc/passwd file contains user account information used by the system to authenticate and manage users.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-linux-part-2/"
+  },
+  {
+    Question: "What is the User ID (UID) 0 typically reserved for in Linux?",
+    Answer: "The root user, which has superuser privileges.",
+    Distractor1: "Normal users with UID 0.",
+    Distractor2: "System accounts with UID 0.",
+    Distractor3: "Guest users.",
+    Explanation:
+      "UID 0 is reserved for the superuser (root) who has unrestricted access to the system.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-linux-part-2/"
+  },
+  {
+    Question:
+      "How does Linux represent the root user in the shell prompt when logged in as root?",
+    Answer: "#",
+    Distractor1: "@",
+    Distractor2: "$",
+    Distractor3: "!",
+    Explanation:
+      "The root user's shell prompt is typically displayed as '#' to signify the superuser's power and responsibility.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-linux-part-2/"
+  },
+  {
+    Question:
+      "Which of the following operations typically require root privileges in Linux?",
+    Answer:
+      "Creating, removing and managing user accounts, managing software packages, removing or modifying system files, restarting system services.",
+    Distractor1:
+      "Running network clients, using devices such as printers, accessing files with proper permissions, executing SUID-root applications.",
+    Distractor2:
+      "Managing user passwords, changing the system time, viewing system logs, creating user groups.",
+    Distractor3:
+      "Installing and updating software, using peripheral devices, reading user data, sharing files over the network.",
+    Explanation:
+      "Root privileges are necessary for critical system administration tasks.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-linux-part-2/"
+  },
+  {
+    Question:
+      "What is the key difference between 'su' and 'sudo' in Linux for granting root access?",
+    Answer:
+      "'su' requires the root password, while 'sudo' requires the user's password and provides more fine-grained control over permissions.",
+    Distractor1:
+      "'su' requires the user's password, while 'sudo' requires the root password and provides detailed logging features.",
+    Distractor2:
+      "'su' and 'sudo' both require the root password and have the same level of security.",
+    Distractor3:
+      "'su' requires no password, while 'sudo' requires both the root and user passwords for authentication.",
+    Explanation:
+      "The methods differ in password requirements and security features.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-linux-part-2/"
+  },
+  {
+    Question:
+      "What file is responsible for configuring user privileges when using 'sudo' in Linux?",
+    Answer: "/etc/sudoers",
+    Distractor1: "/etc/passwd",
+    Distractor2: "/etc/shadow",
+    Distractor3: "/etc/group",
+    Explanation:
+      "/etc/sudoers defines who has the right to use 'sudo' and the scope of their privilege.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-linux-part-2/"
+  },
+  {
+    Question: "Where are sudo command logs typically stored on a Linux system?",
+    Answer: "/var/log/auth.log or /var/log/secure",
+    Distractor1: "/var/log/syslog",
+    Distractor2: "/var/log/messages",
+    Distractor3: "/var/log/sudo.log",
+    Explanation:
+      "Logging is crucial for tracking and accountability of 'sudo' use.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-linux-part-2/"
+  },
+  {
+    Question:
+      "What hashing algorithm is commonly used to encrypt passwords on Linux systems?",
+    Answer: "SHA-512 (Secure Hashing Algorithm 512 bits)",
+    Distractor1: "MD5 (Message Digest Algorithm 5)",
+    Distractor2: "AES (Advanced Encryption Standard)",
+    Distractor3: "RSA (Rivest–Shamir–Adleman)",
+    Explanation: "SHA-512 is widely used for securing passwords in Linux.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-linux-part-2/"
+  },
+  {
+    Question: "What is the purpose of password aging in Linux?",
+    Answer:
+      "To prompt users to create new passwords after a specific period, ensuring passwords have a limited usability period.",
+    Distractor1: "To force users to change their passwords daily.",
+    Distractor2: "To enforce strong password policies.",
+    Distractor3: "To store old passwords for historical reference.",
+    Explanation:
+      "Password aging enhances security by requiring password updates.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-linux-part-2/"
+  },
+  {
+    Question:
+      "What is the recommended practice for handling known security vulnerabilities in Linux?",
+    Answer:
+      "Install updates promptly and take advantage of automatic update mechanisms.",
+    Distractor1:
+      "Ignore known vulnerabilities as they are usually not exploited.",
+    Distractor2:
+      "Manually patch vulnerabilities only when they become critical.",
+    Distractor3: "Reinstall the operating system to resolve vulnerabilities.",
+    Explanation:
+      "Prompt updates are essential to address known vulnerabilities.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-linux-part-2/"
+  },
+  {
+    Question:
+      "Where are user passwords typically stored in modern Linux systems?",
+    Answer: "/etc/shadow",
+    Distractor1: "/etc/passwd",
+    Distractor2: "/etc/passwords",
+    Distractor3: "/var/log/auth.log",
+    Explanation:
+      "Passwords are stored in an encrypted format in the /etc/shadow file.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-linux-part-2/"
+  },
+  {
+    Question:
+      "What is the purpose of using Pluggable Authentication Modules (PAM) for password management in Linux?",
+    Answer:
+      "To enforce strong password policies and automatically verify password strength during password creation or modification.",
+    Distractor1: "To provide a secure environment for running applications.",
+    Distractor2: "To create user accounts with default settings.",
+    Distractor3: "To log all user authentication attempts.",
+    Explanation:
+      "PAM is used to enhance password security by ensuring strong passwords.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-linux-part-2/"
+  },
+  {
+    Question: "How can you enhance the security of the boot process in Linux?",
+    Answer:
+      "By setting a secure password for the bootloader to prevent unauthorized changes during boot.",
+    Distractor1: "By encrypting the entire hard drive.",
+    Distractor2: "By disabling the bootloader entirely.",
+    Distractor3: "By setting a BIOS password.",
+    Explanation:
+      "Bootloader passwords prevent unauthorized changes during boot.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-linux-part-2/"
+  },
+  {
+    Question:
+      "What is the purpose of the Control Groups (cgroups) feature in Linux?",
+    Answer:
+      "To group processes and associate finite resources to each cgroup, enhancing resource management and isolation.",
+    Distractor1: "To control access to hardware devices.",
+    Distractor2: "To manage user accounts and groups.",
+    Distractor3: "To encrypt files and directories.",
+    Explanation: "Control Groups (cgroups) help manage and isolate processes.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-linux-part-2/"
+  },
+  {
+    Question:
+      "What type of accounts have User IDs (UIDs) ranging from 1000 or greater in Linux?",
+    Answer: "Normal user accounts.",
+    Distractor1: "Root accounts.",
+    Distractor2: "System accounts.",
+    Distractor3: "Guest accounts.",
+    Explanation:
+      "UIDs of 1000 or greater are typically assigned to normal users.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-linux-part-2/"
+  },
+  {
+    Question: "What is the purpose of setting a bootloader password in Linux?",
+    Answer:
+      "To prevent unauthorized changes to the bootloader configuration during the boot process.",
+    Distractor1: "To encrypt the entire hard drive.",
+    Distractor2: "To lock the user out of the system entirely.",
+    Distractor3: "To protect the BIOS settings.",
+    Explanation: "Bootloader passwords enhance boot process security.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-linux-part-2/"
+  },
+  {
+    Question:
+      "In Linux, Which command is used to convert and copy files with specific size?",
+    Answer: "dd",
+    Distractor1: "cp",
+    Distractor2: "mv",
+    Distractor3: "df",
+    Explanation:
+      "The dd command is used to convert data along with copying files of specific size.",
+    Link: "https://www.freecodecamp.org/news/linux-example-bash-command-line/#linux-dd-command-example"
+  },
+  {
+    Question:
+      "In Linux, Which command is used to export variables to child processes?",
+    Answer: "export",
+    Distractor1: "env",
+    Distractor2: "move",
+    Distractor3: "df",
+    Explanation:
+      "The export command is used to export variables to child processes.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-export-command"
+  },
+  {
+    Question:
+      "In Linux, which command option is used to perform a case-insensitive search when searching for text patterns?",
+    Answer: "grep -i",
+    Distractor1: "grep -c",
+    Distractor2: "grep -v",
+    Distractor3: "grep -s",
+    Explanation:
+      "The grep -i command is used to perform a case-insensitive search, allowing you to find text patterns ignoring the case.",
+    Link: "https://man7.org/linux/man-pages/man1/grep.1.html"
+  },
+  {
+    Question: "In Linux, which command is used to set limits on a file size?",
+    Answer: "ulimit",
+    Distractor1: "fsize",
+    Distractor2: "flimit -r",
+    Distractor3: "usize",
+    Explanation:
+      "ulimit is a Linux command that is used to get and set a limit on a file size.",
+    Link: "https://man7.org/linux/man-pages/man3/ulimit.3.html"
+  },
+  {
+    Question:
+      "In Linux, which one of the following commands can be used to create a symbolic link between files?",
+    Answer: "ln -s",
+    Distractor1: "ls",
+    Distractor2: "lp",
+    Distractor3: "link",
+    Explanation:
+      "In Linux, the ln -s command is used to create a symbolic link between files.",
+    Link: "https://man7.org/linux/man-pages/man1/ln.1.html"
+  },
+  {
     Question: "Which command finds memory being used by Linux?",
     Answer: "All of these",
     Distractor1: "free-m",
@@ -10,24 +268,26 @@ const linuxQuiz = [
     Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-top-command"
   },
   {
-    Question: "In Linux, which option is used with the uname command to print the processor architecture name?",
+    Question:
+      "In Linux, which option is used with the uname command to print the processor architecture name?",
     Answer: "-p",
     Distractor1: "-arch",
     Distractor2: "-ps",
     Distractor3: "-pname",
     Explanation:
-        "In Linux, the -p option can be used with the uname command to print the processor architecture name.",
-    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-uname-command",
+      "In Linux, the -p option can be used with the uname command to print the processor architecture name.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-uname-command"
   },
   {
-    Question: "In Linux, which option is used with the uname command to print the node network name?",
+    Question:
+      "In Linux, which option is used with the uname command to print the node network name?",
     Answer: "-n",
     Distractor1: "-network",
     Distractor2: "-node",
     Distractor3: "-ntwrk",
     Explanation:
-        "In Linux, the -n option can be used with the uname command to print the node network name.",
-    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-uname-command",
+      "In Linux, the -n option can be used with the uname command to print the node network name.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-uname-command"
   },
   {
     Question:
@@ -427,7 +687,7 @@ const linuxQuiz = [
     Distractor2: ":q!",
     Distractor3: ":wq",
     Explanation:
-      "The i command( for ’insert’), immediately switches vim to insert mode. Once you are in insert mode, you can insert characters just like a regular text editor.",
+      "The i command( for 'insert'), immediately switches vim to insert mode. Once you are in insert mode, you can insert characters just like a regular text editor.",
     Link: "https://www.freecodecamp.org/news/vim-editor-modes-explained/"
   },
   {
@@ -436,7 +696,7 @@ const linuxQuiz = [
     Distractor1: "Tail",
     Distractor2: "Ping",
     Distractor3: "Flux",
-    Explanation: "Linux’s mascot is a penguin named “Tux”.",
+    Explanation: "Linux's mascot is a penguin named “Tux”.",
     Link: "https://www.freecodecamp.org/news/linux-is-25-yay-lets-celebrate-with-25-rad-facts-about-linux-c8d8ac30076d/"
   },
   {
@@ -510,7 +770,7 @@ const linuxQuiz = [
     Distractor2: "Refers to no directory",
     Distractor3: "Refers to the root of the file structure",
     Explanation:
-      "The .. is a special path and means one level up. It refers to the the parent directory.",
+      "The .. is a special path and means one level up. It refers to the parent directory.",
     Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/"
   },
   {
@@ -620,7 +880,7 @@ const linuxQuiz = [
     Distractor2: "The transport Layer",
     Distractor3: "The application layer",
     Explanation:
-      "Layer 1 is the physical layer. There’s a lot of technology in Layer 1 - everything from physical network devices, cabling, to how the cables hook up to the devices.",
+      "Layer 1 is the physical layer. There's a lot of technology in Layer 1 - everything from physical network devices, cabling, to how the cables hook up to the devices.",
     Link: "https://www.freecodecamp.org/news/osi-model-networking-layers-explained-in-plain-english/"
   },
   {
@@ -798,7 +1058,7 @@ const linuxQuiz = [
     Distractor1: "GeNeral Unix",
     Distractor2: "Great New Unix",
     Distractor3: "Greatly Needed Unix",
-    Explanation: "GNU is a recursive acronym for ‘GNU's not UNIX’.",
+    Explanation: "GNU is a recursive acronym for 'GNU's not UNIX'.",
     Link: "https://forum.freecodecamp.org/t/the-origins-of-linux-and-the-free-software-movement-a-brief-history/19527"
   },
   {
@@ -964,7 +1224,8 @@ const linuxQuiz = [
     Distractor2: "{whoami, user, others}",
     Distractor3: "{user, group, all}",
     Explanation:
-      "In Linux, there are three types of users: user, group and other."
+      "In Linux, there are three types of users: user, group and other.",
+    Link: "https://www.freecodecamp.org/news/linux-basics/"
   },
   {
     Question:
@@ -1033,7 +1294,7 @@ const linuxQuiz = [
   },
   {
     Question: "In Linux, what does the dmesg command do?",
-    Answer: "shows kernal logs",
+    Answer: "shows kernel logs",
     Distractor1: "shows authentication logs",
     Distractor2: "shows syslog file",
     Distractor3: "shows daemon logs",
@@ -1044,7 +1305,7 @@ const linuxQuiz = [
   {
     Question: "In Linux, what does the inode mean?",
     Answer: "Unique name given by the operating system to each file",
-    Distractor1: "kernal nodes",
+    Distractor1: "kernel nodes",
     Distractor2: "does not exist",
     Distractor3: "linux nodes",
     Explanation:
@@ -1071,13 +1332,14 @@ const linuxQuiz = [
     Link: "https://man7.org/linux/man-pages/man1/ls.1.html"
   },
   {
-    Question: "In Linux, how do you print the last column of a file named demo.txt?",
+    Question:
+      "In Linux, how do you print the last column of a file named demo.txt?",
     Answer: "awk '{print $NF}' demo.txt",
     Distractor1: "awk '{print $0}' demo.txt",
     Distractor2: "awk '{print $1, $4}' demo.txt",
     Distractor3: "awk '/^print/' demo.txt",
     Explanation:
-     "While using the awk command, you can use $NF which represents the last field in a record, to print the last column of a file",
+      "While using the awk command, you can use $NF which represents the last field in a record, to print the last column of a file",
     Link: "https://www.freecodecamp.org/news/the-linux-awk-command-linux-and-unix-usage-syntax-examples/"
   },
   {
@@ -1087,7 +1349,8 @@ const linuxQuiz = [
     Distractor1: "dirname",
     Distractor2: "pwd",
     Distractor3: "ls",
-    Explanation: "The basename command can be used to print the filename from the given pathname. It will delete any prefix up to the last forward-slash character and return the result.",
+    Explanation:
+      "The basename command can be used to print the filename from the given pathname. It will delete any prefix up to the last forward-slash character and return the result.",
     Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-basename-command"
   },
   {
@@ -1097,7 +1360,8 @@ const linuxQuiz = [
     Distractor1: "du",
     Distractor2: "free",
     Distractor3: "top",
-    Explanation: "The df command stands for disk-free and it is used to check the available disk space in Linux.",
+    Explanation:
+      "The df command stands for disk-free and it is used to check the available disk space in Linux.",
     Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-df-command"
   },
   {
@@ -1107,7 +1371,8 @@ const linuxQuiz = [
     Distractor1: "cd /",
     Distractor2: "clear",
     Distractor3: "ls -la",
-    Explanation: "The cd ~ command can be used to get back to home directory in Linux.",
+    Explanation:
+      "The cd ~ command can be used to get back to home directory in Linux.",
     Link: "https://www.freecodecamp.org/news/linux-command-line-tutorial/"
   },
   {
@@ -1117,9 +1382,290 @@ const linuxQuiz = [
     Distractor1: "y",
     Distractor2: "a",
     Distractor3: "z",
-    Explanation: "If you want to delete a single character in the Vim editor, you can use the x command.",
+    Explanation:
+      "If you want to delete a single character in the Vim editor, you can use the x command.",
     Link: "https://www.freecodecamp.org/news/vim-editor-modes-explained/"
   },
+  {
+    Question:
+      "In Linux, which command is used to find the difference between two files?",
+    Answer: "diff",
+    Distractor1: "uniq",
+    Distractor2: "echo",
+    Distractor3: "chown",
+    Explanation:
+      "In Linux, you can use the diff command to display the difference between two files'.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-diff-command"
+  },
+  {
+    Question:
+      "In Linux, which command is used to used to securely remove data?",
+    Answer: "shred",
+    Distractor1: "rm",
+    Distractor2: "mkdir",
+    Distractor3: "dd",
+    Explanation:
+      "The shred command helps to overwrite the data in place several times. This makes it harder for third party software and hardware probing to recover the data. That is why it's commonly used to securely remove data.",
+    Link: "https://www.freecodecamp.org/news/securely-erasing-a-disk-and-file-using-linux-command-shred/"
+  },
+  {
+    Question:
+      "In Linux, which the command is used to remove an empty directory?",
+    Answer: "rmdir",
+    Distractor1: "remove",
+    Distractor2: "rdir",
+    Distractor3: "delete",
+    Explanation:
+      "If you have an empty directory that you would like to remove, then you can use the rmdir command in the terminal.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-rmdir-command"
+  },
+  {
+    Question:
+      "In Linux, which command is used to create a new file and open it in the Vim editor?",
+    Answer: "vi filename.extension",
+    Distractor1: "new filename.extension",
+    Distractor2: "create filename",
+    Distractor3: "None of the above",
+    Explanation:
+      "vi filename.extension is used to create a new file using the terminal and open it in the Vim editor.",
+    Link: "https://www.freecodecamp.org/news/learn-vim-beginners-tutorial/"
+  },
+  {
+    Question:
+      "In Linux, which command is used to list the last 10 lines of a file?",
+    Answer: "tail -10 filename",
+    Distractor1: "bottom -10 filename",
+    Distractor2: "last -10 filename",
+    Distractor3: "filename -10",
+    Explanation:
+      "tail -10 filename is used to list the last 10 lines of a file.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook"
+  },
+  {
+    Question:
+      "In Linux, which command is used to display the first 10 lines of a file?",
+    Answer: "head -10 'filename'",
+    Distractor1: "filename -10",
+    Distractor2: "filename -f",
+    Distractor3: "ls filename -10",
+    Explanation:
+      "The head -10 'filename' command is used to display the first 10 lines of a file.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook"
+  },
+  {
+    Question:
+      "In Linux, which command is used to list files with its permissions and users access?",
+    Answer: "ls -l",
+    Distractor1: "ls allusers",
+    Distractor2: "ls all",
+    Distractor3: "None of These",
+    Explanation:
+      "In Linux, the ls -l command is used to long list the files which displays the permissions of files and user access",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook"
+  },
+  {
+    Question:
+      "In Linux, which command is used to list all files with the .js extension?",
+    Answer: "ls *.js",
+    Distractor1: "ls js",
+    Distractor2: "ls .js files",
+    Distractor3: "None of These",
+    Explanation:
+      "In Linux, this formatter with the ls command can be used to list all files with similar postfix or extension",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook"
+  },
+  {
+    Question:
+      "In Linux, which command is used to list the file extensions in alphabetical order?",
+    Answer: "ls -X",
+    Distractor1: "ls -a",
+    Distractor2: "ls alpha",
+    Distractor3: "ls -extension",
+    Explanation:
+      "The ls -X command is used to list the file extensions in alphabetical order.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/"
+  },
+  {
+    Question:
+      "In Linux, which command is used to concatenate two files and display the output?",
+    Answer: "cat file1 file2 file3",
+    Distractor1: "Cat file1 + file2",
+    Distractor2: "Cat file1 file2 > file3",
+    Distractor3: "Cat file1 > file2",
+    Explanation:
+      "The cat command prints a file's content to the standard output",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/"
+  },
+  {
+    Question:
+      "In Linux, what are four operations that can be done with the cat command?",
+    Answer: "create, read, write and append files",
+    Distractor1: "create, delete, reverse and append files",
+    Distractor2: "sort, destroy, move and append files",
+    Distractor3: "reverse, read, write and multiply files",
+    Explanation: "The cat command can create, read, write and append files.",
+    Link: "https://www.freecodecamp.org/news/the-cat-command-in-linux-how-to-create-a-text-file-with-cat-or-touch/"
+  },
+  {
+    Question:
+      "In Linux, which of the following options is the correct way to create a new file?",
+    Answer: "> filename.extension",
+    Distractor1: "cd filename.extension",
+    Distractor2: "ls filename.extension",
+    Distractor3: "None of the above",
+    Explanation:
+      "> greater than operator is used to create a new file in Linux.",
+    Link: "https://www.freecodecamp.org/news/learn-the-50-most-used-linux-terminal-commands/"
+  },
+  {
+    Question: "In Linux, what does elif stand for?",
+    Answer: "else if",
+    Distractor1: "elif condition",
+    Distractor2: "elif statement",
+    Distractor3: "None of the above",
+    Explanation: "elif is an else if statement in Shell Scripting.",
+    Link: "https://www.freecodecamp.org/news/shell-scripting-crash-course-how-to-write-bash-scripts-in-linux/"
+  },
+  {
+    Question: "In Linux, Which command is used to stop a running process?",
+    Answer: "kill -9 [process ID]",
+    Distractor1: "pidof [OPTIONS] NAME",
+    Distractor2: "ps -ef",
+    Distractor3: "stop [signal] PID",
+    Explanation: "The kill command is used to stop a running process.",
+    Link: "https://www.linuxfoundation.org/blog/blog/classic-sysadmin-how-to-kill-a-process-from-the-command-line"
+  },
+  {
+    Question:
+      "In Linux, which command is used to perform a binary file comparison and display the differences between two files?",
+    Answer: "cmp",
+    Distractor1: "diff",
+    Distractor2: "compare",
+    Distractor3: "contrast",
+    Explanation:
+      "The 'cmp' command is used to compare two binary files byte by byte and displays the differences between them, if any.",
+    Link: "https://linux.die.net/man/1/cmp"
+  },
+  {
+    Question:
+      "In Linux, what command is used to analyze and display detailed information about system resource usage by processes?",
+    Answer: "top",
+    Distractor1: "ps",
+    Distractor2: "htop",
+    Distractor3: "uptime",
+    Explanation:
+      "The 'top' command provides a real-time view of system resource usage by processes, including CPU, memory, and more.",
+    Link: "https://linux.die.net/man/1/top"
+  },
+  {
+    Question:
+      "Which Linux command is used to securely copy files and directories over SSH?",
+    Answer: "scp",
+    Distractor1: "rsync",
+    Distractor2: "ftp",
+    Distractor3: "wget",
+    Explanation:
+      "The 'scp' command is used for secure copy over SSH, allowing files and directories to be transferred securely between hosts.",
+    Link: "https://linux.die.net/man/1/scp"
+  },
+  {
+    Question: "In Linux, what is the purpose of the 'strace' command?",
+    Answer:
+      "The 'strace' command is used to trace system calls and signals made by a process.",
+    Distractor1: "The 'strace' command is used to check network status.",
+    Distractor2: "The 'strace' command is used to list running processes.",
+    Distractor3: "The 'strace' command is used to analyze memory usage.",
+    Explanation:
+      "The 'strace' command can be an invaluable tool for diagnosing issues with programs and understanding their behavior at a system call level. This command is used to trace system calls and signals made by a process. To use 'strace', you specify the program's name and its arguments as parameters.",
+    Link: "https://linux.die.net/man/1/strace"
+  },
+  {
+    Question:
+      "What Linux command is used to view and edit the system's crontab, which controls scheduled tasks and cron jobs?",
+    Answer: "crontab",
+    Distractor1: "cronjob",
+    Distractor2: "taskcron",
+    Distractor3: "cronedit",
+    Explanation:
+      "The 'crontab' command is used to view and edit the cron jobs for a user. It opens the user's crontab file for editing.",
+    Link: "https://linux.die.net/man/1/crontab"
+  },
+  {
+    Question: "How does Linux work on Ubuntu?",
+    Answer:
+      "The Linux kernel serves as an interface between hardware and software.",
+    Distractor1: "Ubuntu kernel is entirely separate from Linux.",
+    Distractor2: "Ubuntu uses a proprietary operating system.",
+    Distractor3: "Linux operates without a kernel on Ubuntu.",
+    Explanation:
+      "The Linux kernel, which manages system resources, acts as the bridge between the hardware and software on Ubuntu. It initializes hardware, establishes the system environment, loads necessary drivers, and allows applications to run on top of it. This fundamental structure is common to all Linux distributions, including Ubuntu.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-linux/"
+  },
+  {
+    Question:
+      "Which package manager is commonly used in Debian-based Linux distributions, such as Ubuntu?",
+    Answer: "APT",
+    Distractor1: "YUM",
+    Distractor2: "DNF",
+    Distractor3: "Pacman",
+    Explanation:
+      "APT (Advanced Package Tool) is the package manager commonly used in Debian-based distributions, while the other options are more associated with other Linux distributions.",
+    Link: "https://linux.die.net/man/8/apt"
+  },
+  {
+    Question: "What is the primary purpose of the halt command in Linux?",
+    Answer:
+      "It initiates the system shutdown process and powers off the computer.",
+    Distractor1: "It moves files from one directory to another.",
+    Distractor2: "It displays system information and statistics.",
+    Distractor3: "It reboots the system.",
+    Explanation:
+      "When you use the halt command in Linux, it sends a signal to the system to initiate a controlled shutdown. The operating system will gracefully terminate running processes and then power off the computer, effectively shutting it down.",
+    Link: "https://man7.org/linux/man-pages/man8/halt.8.html"
+  },
+  {
+    Question:
+      "In Linux, what can we use to configure a custom command with a unique set of options?",
+    Answer: "alias",
+    Distractor1: "suo",
+    Distractor2: "umask",
+    Distractor3: "grep",
+    Explanation:
+      "Some commands fail to provide enough information and context. When you are in need of a custom solution, using an alias to refer to a more useful base command can be very helpful.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-alias-command"
+  },
+  {
+    Question:
+      "What does Ctrl + r (windows) or ⌘ + r(mac) do in the default ubuntu terminal?",
+    Answer: "query the command history",
+    Distractor1: "to call find & replace text function",
+    Distractor2: "to redo last action",
+    Distractor3: "to reload current shell",
+    Explanation:
+      "The Ctrl + r (windows) or ⌘ + r(mac) shortcut helps you query the command history by suggesting autocomplete.",
+    Link: "https://www.freecodecamp.org/news/bash-command-line-tips-to-help-you-work-faster/"
+  },
+  {
+    Question:
+      "In Ubuntu, which of the following commands adds the user named 'quincy' to a group named 'writers'?",
+    Answer: "usermod -a -G writers quincy",
+    Distractor1: "usermod -g writers quincy",
+    Distractor2: "useradd writers quincy",
+    Distractor3: "group writers -a quincy",
+    Explanation:
+      'You can use the usermod command to add a user to a group. The -a parameter means "append" and the -G parameter adds a group as a secondary group',
+    Link: "https://www.freecodecamp.org/news/linux-user-groups-explained-how-to-add-a-new-group-a-new-group-member-and-change-groups/"
+  },
+  {
+    Question:
+      "In Linux, which command below does not display logs?",
+    Answer: "cd",
+    Distractor1: "dmesg",
+    Distractor2: "journalctl",
+    Distractor3: "cat /var/log/syslog",
+    Explanation: "The cd command stands for change directory and is used to change to a directory in the terminal. The cd command is not used to display logs.",
+    Link: "https://www.youtube.com/watch?v=ROjZy1WbCIA&t=3472s"
+  }
 ];
 
 export default linuxQuiz;

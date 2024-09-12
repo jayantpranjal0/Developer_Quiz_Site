@@ -1,6 +1,17 @@
 const cssQuiz = [
   {
     Question:
+      "In CSS, Flex is a shorthand property for which of the following properties?",
+    Answer: "flex-grow, flex-shrink, and flex-basis",
+    Distractor1: "justify-content, align-items, and align-content",
+    Distractor2: "flex-direction, flex-wrap, and flex-flow",
+    Distractor3: "flex-direction, order, and flex-flow",
+    Explanation:
+      "Flex is a shorthand property for all three of these properties: flex-grow, flex-shrink, and flex-basis.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/CSS/flex"
+  },
+  {
+    Question:
       "Which CSS property is used to represent the transparency of an element?",
     Answer: "Opacity",
     Distractor1: "Dark",
@@ -1010,7 +1021,7 @@ const cssQuiz = [
     Link: "https://www.freecodecamp.org/news/10-css-tricks-for-your-next-coding-project/"
   },
   {
-    Question: "How do you create a flexbox container in CSS Flexbox?",
+    Question: "How do you create a Flexbox container in CSS Flexbox?",
     Answer: "display:flex;",
     Distractor1: "display:flexbox;",
     Distractor2: "display:flexcontainer;",
@@ -1200,7 +1211,29 @@ const cssQuiz = [
   },
   {
     Question:
-      "Which of the following CSS properties is used to add a stroke in the text ?",
+      "In CSS, which of the following properties can be used to set the body color to black?",
+    Answer: "background-color:black;",
+    Distractor1: "body-color:black",
+    Distractor2: "backgroundColor:black",
+    Distractor3: "color:black",
+    Explanation:
+      "In CSS, the background-color property is used to set the color of the background.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color"
+  },
+  {
+    Question:
+      "Which of the following is the correct syntax for an attribute selector in CSS?",
+    Answer: "selector[attribute='value']",
+    Distractor1: "container[value]",
+    Distractor2: "attribute[value]",
+    Distractor3: "value[attribute]",
+    Explanation:
+      "The correct syntax for an attribute selector in CSS is selector[attribute='value'].",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"
+  },
+  {
+    Question:
+      "Which of the following CSS properties is used to add a stroke in the text?",
     Answer: "text-stroke",
     Distractor1: "text-transform",
     Distractor2: "text-decoration",
@@ -1208,8 +1241,8 @@ const cssQuiz = [
     Explanation:
       "text-stroke is a CSS property that is used to add a stroke in the text.",
     Link: "https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke"
-   },
-   {
+  },
+  {
     Question:
       "In CSS, which property is used to apply a groove style to the border?",
     Answer: "border-style",
@@ -1219,6 +1252,83 @@ const cssQuiz = [
     Explanation:
       "You can use border-style: groove; to specify groove border styles around HTML elements.",
     Link: "https://www.freecodecamp.org/news/css-border-style-and-html-code-examples/"
+  },
+  {
+    Question:
+      "In CSS, what will the following pseudo class selector do :nth-child(2)?",
+    Answer: "Selects the second child of the parent element",
+    Distractor1: "Select 2 children of the parent element",
+    Distractor2: "Select 2 elements of the parent element",
+    Distractor3: "None of the above",
+    Explanation:
+      "The :nth-child() pseudo-class selector matches every element that is the second child, third child, etc. of its parent.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child"
+  },
+  {
+    Question:
+      "Which CSS property is utilized to manage the spacing between characters in text?",
+    Answer: "letter-spacing",
+    Distractor1: "word-spacing",
+    Distractor2: "line-height",
+    Distractor3: "text-indent",
+    Explanation:
+      "The CSS property 'letter-spacing' is used to control the spacing between characters in a text.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing"
+  },
+  {
+    Question:
+      "What is the correct way to include an external CSS file in an HTML document?",
+    Answer: '<link rel="stylesheet" href="styles.css">',
+    Distractor1: '<style src="styles.css">',
+    Distractor2: '<css href="styles.css">',
+    Distractor3: '<script type="text/css" src="styles.css">',
+    Explanation:
+      "To include an external CSS file in an HTML document, you should use the <link> element with the rel attribute set to 'stylesheet' and the href attribute pointing to the CSS file you want to include. ",
+    Link: "https://www.freecodecamp.org/news/external-css-stylesheets-how-to-link-css-to-html-and-import-into-head/"
+  },
+  {
+    Question:
+      "Which CSS property is used to control the order of how elements are displayed in relation to each other along the z-axis?",
+    Answer: "z-index",
+    Distractor1: "stack-order",
+    Distractor2: "z-order",
+    Distractor3: "z-depth",
+    Explanation:
+      "The z-index property in CSS is used to control the stacking order of elements in relation to each other along the z-axis (front to back). It's commonly used in the context of positioned or layered elements, such as when using relative or absolute positioning.",
+    Link: "https://www.freecodecamp.org/news/how-the-z-index-property-works-under-the-hood/"
+  },
+  {
+    Question:
+      "Which CSS property is used to create a drop shadow for an element?",
+    Answer: "box-shadow",
+    Distractor1: "shadow-effect",
+    Distractor2: "element-shadow",
+    Distractor3: "text-shadow",
+    Explanation:
+      "The box-shadow property in CSS is used to create a shadow effect for an element, such as a div or a box. It allows you to add shadow in terms of color, size, blur, spread, and position relative to the element.",
+    Link: "https://www.freecodecamp.org/news/css-box-shadow-property-with-examples/"
+  },
+  {
+    Question:
+      "In CSS, which value is used to make an element take up the full available width of its parent container?",
+    Answer: "100%",
+    Distractor1: "full-width",
+    Distractor2: "max-width",
+    Distractor3: "auto",
+    Explanation:
+      "When you set an element's width to 100%, it means that the element should occupy the entire width of its parent container. This is particularly useful for creating responsive web designs where you want elements to adapt to the available space.",
+    Link: "https://www.freecodecamp.org/news/html-page-width-height/"
+  },
+  {
+    Question:
+      "Which CSS at-rule is used to specify a custom font to display the text in a website?",
+    Answer: "@font-face",
+    Distractor1: "@charset",
+    Distractor2: "@namespace",
+    Distractor3: "@font-feature-values",
+    Explanation:
+      "The @font-face CSS at-rule specifies a custom font with which to display text and can be loaded from either via URL or a locally-installed font.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
   }
 ];
 

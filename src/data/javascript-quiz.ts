@@ -1,5 +1,38 @@
 const javascriptQuiz = [
-   {
+  {
+    Question:
+      "In JavaScript, if let x='Prakhar', then what will be the result for console.log(x.substring(2,5))?",
+    Answer: "akh",
+    Distractor1: "akaha",
+    Distractor2: "aka",
+    Distractor3: "akkkaha",
+    Explanation:
+      "The first parameter in the substring method represents the starting index for the string while the second parameter represents the ending index.",
+    Link: "https://www.freecodecamp.org/news/javascript-substring-examples-slice-substr-and-substring-methods-in-js/"
+  },
+  {
+    Question:
+      "In JavaScript, what is the range of numbers returned from the Math.random() method?",
+    Answer: "Between 0 and 1 (including 0; not including 1).",
+    Distractor1: "Between 0 and 1 (including neither 0 or 1).",
+    Distractor2: "Between 0 and 1 (including 1; not including 0).",
+    Distractor3: "Between 0 and 100 (including 0; not including 100).",
+    Explanation:
+      "Math.random() returns a floating point (decimal) number that is less than one and greater than or equal to zero.",
+    Link: "https://www.freecodecamp.org/news/javascript-math-random-method-explained/"
+  },
+  {
+    Question:
+      "In JavaScript, what is the difference between the indexOf() and search() methods?",
+    Answer: "indexOf() can take a second parameter while search() cannot",
+    Distractor1: "Both methods are the same",
+    Distractor2: "indexOf() only takes regular expressions",
+    Distractor3: "The search() method runs 4x faster than the indexOf() method",
+    Explanation:
+      "One key difference between the indexOf() and search() methods is that indexOf() can take a second parameter while search() cannot.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf"
+  },
+  {
     Question: "What does the 'debugger' statement in JavaScript do?",
     Answer: "It acts as a breakpoint in a program",
     Distractor1: "It will debug errors in the current statement",
@@ -84,6 +117,17 @@ const javascriptQuiz = [
     Explanation:
       "shift() removes elements from the front of the array, which means the entire array needs to be re-indexed. In contrast, pop() and push() both work from the 'back' of the array and don't require re-indexing.",
     Link: "https://www.freecodecamp.org/news/the-complexity-of-simple-algorithms-and-data-structures-in-javascript-11e25b29de1e/"
+  },
+  {
+    Question:
+      "In JavaScript, what will be the result for the following code: 12345.6789.toFixed()?",
+    Answer: "12346",
+    Distractor1: "12345",
+    Distractor2: "12345.6789",
+    Distractor3: "Undefined. toFixed() must take parameters",
+    Explanation:
+      "Parameters are optional. If not passed, it will round the given number, leaving with no fractional part",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed#examples"
   },
   {
     Question:
@@ -218,6 +262,20 @@ const javascriptQuiz = [
   },
   {
     Question:
+      "In JavaScript class-based OOP, are objects and classes the same constructs?",
+    Answer: "No, objects and classes are two separate constructs.",
+    Distractor1:
+      "No, objects and classes are completely unrelated in JavaScript.",
+    Distractor2:
+      "Yes, objects and classes are only used in functional programming, not in JavaScript class-based OOP",
+    Distractor3:
+      "Yes, objects and classes are interchangeable and can be used interchangeably in JavaScript class-based OOP.",
+    Explanation:
+      "Classes and objects represent distinct concepts within programming.  Objects are exclusively instantiated from classes.",
+    Link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming"
+  },
+  {
+    Question:
       "In JavaScript, a variable declared with the _________ keyword must be assigned an initial value.",
     Answer: "const",
     Distractor1: "finally",
@@ -226,17 +284,6 @@ const javascriptQuiz = [
     Explanation:
       "The value of a const variable must be specified when the variable is declared.",
     Link: "https://www.freecodecamp.org/news/let-me-be-a-const-ant-not-a-var-iable-1be52d153462/"
-  },
-  {
-    Question:
-      "In JavaScript, given the array, 'let array = [0, 1, 2, 3]', what is a valid way to clear all of the the array's values?",
-    Answer: "array.length = 0",
-    Distractor1: "array.none()",
-    Distractor2: "array.concat()",
-    Distractor3: "array.push()",
-    Explanation:
-      "Assigning 0 to the length property of the array will clear the contents of the array.",
-    Link: "https://www.freecodecamp.org/news/check-if-javascript-array-is-empty-or-not-with-length/"
   },
   {
     Question:
@@ -293,19 +340,18 @@ const javascriptQuiz = [
     Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality"
   },
   {
-    Question:
-      "In JavaScript, select the right syntax for an ES6 arrow function:",
-    Answer: "let variable = () => {//code block}",
-    Distractor1: "let variable => (){//code block}",
-    Distractor2: "let variable = function() => {//code block}",
-    Distractor3: "let variable = function(){//code block}",
+    Question: "Select the correct syntax for a JavaScript ES6 arrow function:",
+    Answer: "const variable = () => // code",
+    Distractor1: "const variable <=> ()()// code ",
+    Distractor2: "const variable === function() => {//code}",
+    Distractor3: "const variable =>> function(){//code}",
     Explanation:
       "ES6 arrow functions provide you with an alternative way to write shorter syntax compared to the traditional function expression.",
     Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions"
   },
   {
     Question:
-      "In JavaScript, what will be the value of output? let output = null ?? 20",
+      "In JavaScript, what will be the value for the following code: null ?? 20",
     Answer: "20",
     Distractor1: "undefined",
     Distractor2: "null",
@@ -950,7 +996,7 @@ const javascriptQuiz = [
   },
   {
     Question:
-      "In JavaScript, which one of these variable declarations can be redeclared within its scope?",
+      "In JavaScript, which one of these variable declarations can be re declared within its scope?",
     Answer: "var",
     Distractor1: "splice",
     Distractor2: "object.freeze",
@@ -1118,13 +1164,13 @@ const javascriptQuiz = [
   },
   {
     Question:
-      "In JavaScript, what is the name of the method used to find elements that match one of more selectors?",
+      "In JavaScript, what is the name of the method used to find elements that match one or more selectors?",
     Answer: ".querySelector()",
     Distractor1: ".textContent()",
     Distractor2: ".padEnd()",
     Distractor3: "Optional chaining",
     Explanation:
-      "The .querySelector() method is used to find elements in the DOM that match one of more selectors.",
+      "The .querySelector() method is used to find elements in the DOM that match one or more selectors.",
     Link: "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/"
   },
   {
@@ -1571,16 +1617,6 @@ const javascriptQuiz = [
     Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
   },
   {
-    Question: "In JavaScript, what type of value is an Array?",
-    Answer: "Object",
-    Distractor1: "Array",
-    Distractor2: "Map",
-    Distractor3: "Set",
-    Explanation:
-      "In JavaScript besides primitives types, we have the Object value type. Arrays are a special type of object that represents a collection of similar types of values.",
-    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
-  },
-  {
     Question:
       "In JavaScript, which of the following methods will return the string representation of a number?",
     Answer: "toFixed()",
@@ -1609,7 +1645,7 @@ const javascriptQuiz = [
     Distractor2: "Unary plus +",
     Distractor3: "Equality ==",
     Explanation:
-      "On the precendence table, the grouping () operator is the highest with a precedence value of 18",
+      "On the precedence table, the grouping () operator is the highest with a precedence value of 18",
     Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table"
   },
   {
@@ -1801,7 +1837,8 @@ const javascriptQuiz = [
     Distractor1: "11",
     Distractor2: "57",
     Distractor3: "undefined",
-    Explanation: "The result for console.log(7 + '5') is 75 because the + operator is used to concatenate strings.",
+    Explanation:
+      "The result for console.log(7 + '5') is 75 because the + operator is used to concatenate strings.",
     Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition"
   },
   {
@@ -1811,7 +1848,8 @@ const javascriptQuiz = [
     Distractor1: "12",
     Distractor2: "undefined",
     Distractor3: "NaN",
-    Explanation: "The result is 2 because in JavaScript you can't use the - operator on strings so it will automatically convert the strings to numbers and subtract the two values.",
+    Explanation:
+      "The result is 2 because in JavaScript you can't use the - operator on strings so it will automatically convert the strings to numbers and subtract the two values.",
     Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction#subtraction_with_non-numbers"
   },
   {
@@ -1824,6 +1862,260 @@ const javascriptQuiz = [
     Explanation:
       "The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present.",
     Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf"
+  },
+  {
+    Question:
+      "In JavaScript, which of the following is not a primitive data type?",
+    Answer: "Object",
+    Distractor1: "Number",
+    Distractor2: "String",
+    Distractor3: "Undefined",
+    Explanation:
+      "JavaScript has 7 primitive data types. Boolean, null, undefined, Number, BigInt, String and Symbol",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types#data_structures_and_types"
+  },
+  {
+    Question:
+      "In JavaScript, how many ways can you access an object's properties?",
+    Answer: "2",
+    Distractor1: "1",
+    Distractor2: "8",
+    Distractor3: "13",
+    Explanation:
+      "To access data from an object in JavaScript, you can use either dot notation or bracket notation.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors"
+  },
+  {
+    Question:
+      "In JavaScript, what is the classification for a 'function' and 'class'?",
+    Answer: "Declaration statements",
+    Distractor1: "Keywords",
+    Distractor2: "Data types",
+    Distractor3: "Variables",
+    Explanation:
+      "Both 'function' and 'class' are used in the beginning to declare a function and class respectively.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements"
+  },
+  {
+    Question:
+      "In JavaScript, which of the following is NOT a composite data type?",
+    Answer: "String",
+    Distractor1: "Array",
+    Distractor2: "Class",
+    Distractor3: "Object",
+    Explanation:
+      "In JavaScript, a composite data type is defined as not being an object as well as having no properties or methods.",
+    Link: "https://developer.mozilla.org/en-US/docs/Glossary/Primitive"
+  },
+  {
+    Question:
+      "In JavaScript, what is the result for the following code: console.log(true + 34)?",
+    Answer: "35",
+    Distractor1: "34",
+    Distractor2: "true34",
+    Distractor3: "true",
+    Explanation:
+      "Since true is converted to the number 1, then true + 34 would result in 35.",
+    Link: "https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion"
+  },
+  {
+    Question:
+      "In JavaScript, how many parameters does the forEach() method take?",
+    Answer: "3",
+    Distractor1: "1",
+    Distractor2: "2",
+    Distractor3: "4",
+    Explanation:
+      "The forEach() method takes 3 parameters: the current value, the index, and the array.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+  },
+  {
+    Question:
+      "In JavaScript, how many parameters does the reduce() method take?",
+    Answer: "4",
+    Distractor1: "1",
+    Distractor2: "2",
+    Distractor3: "3",
+    Explanation:
+      "The reduce() method takes 4 parameters: the accumulator, the current value, the index, and the array.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce"
+  },
+  {
+    Question:
+      "In JavaScript, which array method returns true if ALL values pass a condition?",
+    Answer: "every()",
+    Distractor1: "some()",
+    Distractor2: "filter()",
+    Distractor3: "find()",
+    Explanation:
+      "The every() method returns true if all values in the array pass a condition and false if any value fails the condition.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every"
+  },
+  {
+    Question: "In JavaScript, what does the forEach() method return?",
+    Answer: "undefined",
+    Distractor1: "true",
+    Distractor2: "false",
+    Distractor3: "null",
+    Explanation:
+      "forEach() always returns undefined. It makes no difference whether the return keyword is used or not.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+  },
+  {
+    Question:
+      "In JavaScript, what is the name for a variable that can be changed?",
+    Answer: "Mutable Variable",
+    Distractor1: "Volatile Variable",
+    Distractor2: "Dynamic Variable",
+    Distractor3: "Fluid Variable",
+    Explanation:
+      "Variables that can have their values changed are referred to as Mutable Variables. Only objects and arrays are changeable in JavaScript; primitive values are not.",
+    Link: "https://developer.mozilla.org/en-US/docs/Glossary/Mutable"
+  },
+  {
+    Question: "In JavaScript, what is a use case for using an IIFE?",
+    Answer:
+      "To create a private variable and avoid polluting the global environment",
+    Distractor1: "To Create a Global Variable",
+    Distractor2: "To Run a Function",
+    Distractor3: "To Create a Constant",
+    Explanation:
+      "An IIFE or Immediately Invoked Function Expression, is used to declare a private variable and to avoid polluting the global environment. If a function is declared with an IIFE by using a parenthesis around it, the variable declared inside it becomes private and its value can be accessed using a getter function inside the original function.",
+    Link: "https://developer.mozilla.org/en-US/docs/Glossary/IIFE"
+  },
+  {
+    Question:
+      "In JavaScript, which of the following statements is correct regarding async await?",
+    Answer: "async automatically returns a promise",
+    Distractor1: "await keeps executing code regardless of promise status",
+    Distractor2: "async can be used independently without an async function",
+    Distractor3:
+      "Multiple await keywords can be used in a single line inside an async function",
+    Explanation:
+      "Declaring an asynchronous function generates an AsyncFunction object. Whenever this async function is invoked, it produces a fresh Promise. This Promise will either resolve with the value returned by the async function or reject if there's an uncaught exception within the async function.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function"
+  },
+  {
+    Question: "What is the main purpose of Web Workers in JavaScript?",
+    Answer:
+      "To perform time-consuming tasks in the background without blocking the main thread.",
+    Distractor1: "To create web animations and transitions.",
+    Distractor2: "To manage browser cookies and local storage.",
+    Distractor3: "To enhance the rendering of web pages.",
+    Explanation:
+      "Web Workers are a powerful feature for improving the responsiveness of web applications by offloading CPU-intensive tasks to separate threads. Understanding their use is essential for building efficient web applications",
+    Link: "https://www.freecodecamp.org/news/how-webworkers-work-in-javascript-with-example/"
+  },
+  {
+    Question: "What is 'event delegation' in JavaScript?",
+    Answer:
+      "Event delegation is a technique for handling events on multiple child elements",
+    Distractor1:
+      " Event delegation is a way to dynamically create new events in JavaScript.",
+    Distractor2:
+      "Event delegation is a technique to delegate event handling to the document object.",
+    Distractor3:
+      "Event delegation is a way to remove all event listeners from an element.",
+    Explanation:
+      "Event delegation is a powerful and efficient technique in JavaScript for handling events on multiple elements by attaching a single event listener to a common ancestor of those elements.",
+    Link: "https://www.freecodecamp.org/news/event-delegation-javascript/"
+  },
+  {
+    Question: "What is the primary purpose of web cookies?",
+    Answer:
+      "Storing data on the client-side to maintain user sessions and preferences.",
+    Distractor1: "Collecting user personal information.",
+    Distractor2: "Displaying website content.",
+    Distractor3: "Routing internet traffic.",
+    Explanation:
+      "Web cookies are primarily used to store data on the client-side, such as user sessions and preferences, to enhance the user experience.",
+    Link: "https://www.freecodecamp.org/news/everything-you-need-to-know-about-cookies-for-web-development/"
+  },
+  {
+    Question:
+      "Which type of web cookies are created and managed by JavaScript, and are often used for temporary data storage?",
+    Answer: "Session cookies.",
+    Distractor1: "Persistent cookies.",
+    Distractor2: "Secure cookies.",
+    Distractor3: "Third-party cookies.",
+    Explanation:
+      "Session cookies are created and managed by JavaScript and are typically used for temporary data storage during a user's session.",
+    Link: "https://www.freecodecamp.org/news/everything-you-need-to-know-about-cookies-for-web-development/"
+  },
+  {
+    Question:
+      "What is the maximum storage capacity of a single cookie in most web browsers?",
+    Answer: "4 KB (kilobytes).",
+    Distractor1: "1 MB (megabyte).",
+    Distractor2: "100 bytes.",
+    Distractor3: "10 KB (kilobytes).",
+    Explanation:
+      "In most web browsers, a single cookie can store up to 4 KB (kilobytes) of data.",
+    Link: "https://www.freecodecamp.org/news/everything-you-need-to-know-about-cookies-for-web-development/"
+  },
+  {
+    Question:
+      "Which one of the following is considered a primitive value in JavaScript?",
+    Answer: "3.14",
+    Distractor1: "[1, 4, 9, 16]",
+    Distractor2: "function add(x, y) { return x + y; }",
+    Distractor3: "Date('2023-10-25')",
+    Explanation:
+      "There are 7 primitive data types in JavaScript: strings, numbers, booleans, null, undefined, Symbol, and BigInt. Everything else is a JavaScript object including arrays, sets, functions, dates, etc.",
+    Link: "https://www.freecodecamp.org/news/objects-in-javascript/"
+  },
+  {
+    Question: "What is the result of the given code: console.log(12 + 'A')?",
+    Answer: "'12A'",
+    Distractor1: "13",
+    Distractor2: "NaN",
+    Distractor3: "Error",
+    Explanation:
+      "12 + 'A' would result in '12A' since the entire expression will be considered as string concatenation rather than addition.",
+    Link: "https://www.freecodecamp.org/news/javascript-string-concatenation/"
+  },
+  {
+    Question:
+      "Which of the following is not a valid way to declare a variable in JavaScript?",
+    Answer: "let 1z = 10;",
+    Distractor1: "var x;",
+    Distractor2: "const y = 5;",
+    Distractor3: "let name = 'John'",
+    Explanation:
+      "Variable names cannot start with a number or any special character.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types"
+  },
+  {
+    Question:
+      "In JavaScript, what would happen if you tried to reassign a value to a const variable?",
+    Answer: "JavaScript throws a TypeError",
+    Distractor1: "JavaScript throws a SyntaxError",
+    Distractor2: "The JavaScript program will crash",
+    Distractor3: "The program will return null",
+    Explanation:
+      "In JavaScript, a type error will occur because a variable declared with const cannot be reassigned.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const"
+  },
+  {
+    Question:
+      "In JavaScript, what would be the result for the following: 0.1 + 0.2 === 0.3?",
+    Answer: "false",
+    Distractor1: "true",
+    Distractor2: "undefined",
+    Distractor3: "NaN",
+    Explanation:
+      "Due to floating-point precision issues, 0.1 + 0.2 does not exactly equal 0.3.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/EPSILON"
+  },
+  {
+    Question: "What does Array.isArray([]) return?",
+    Answer: "true",
+    Distractor1: "false",
+    Distractor2: "undefined",
+    Distractor3: "null",
+    Explanation:
+      "Array.isArray([]) returns true because the isArray method checks if the passed argument is an array.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray"
   }
 ];
 

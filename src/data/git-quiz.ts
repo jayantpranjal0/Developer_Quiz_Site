@@ -18,7 +18,7 @@ const gitQuiz = [
     Distractor2: "git save code",
     Distractor3: "git clone --for later",
     Explanation:
-      "Stashes are temporary storage spaces where you can store your code. When you’re done, you can put your code back from the stash using git stash pop. You won’t have to worry about losing any uncommitted changes!",
+      "Stashes are temporary storage spaces where you can store your code. When you're done, you can put your code back from the stash using git stash pop. You won’t have to worry about losing any uncommitted changes!",
     Link: "https://www.freecodecamp.org/news/how-to-use-git-stash-as-temporary-storage-84a0a1e37a43/"
   },
   {
@@ -357,7 +357,7 @@ const gitQuiz = [
   },
   {
     Question:
-      "In Git, what do you do right after resovling a merge conflict in a file?",
+      "In Git, what do you do right after resolving a merge conflict in a file?",
     Answer: "git add file_that_had_conflict",
     Distractor1: "git commit",
     Distractor2: "git status",
@@ -523,7 +523,114 @@ const gitQuiz = [
     Explanation:
       "To delete a SINGLE stash, you use git stash drop stash@{x} where x is the number in the list of stash.",
     Link: "https://git-scm.com/docs/git-stash"
-  }
+  },
+  {
+    Question: "How do you change the latest commit message in Git?",
+    Answer: "git commit --amend",
+    Distractor1: "git checkout -b change",
+    Distractor2: "git rebase -i Head~4",
+    Distractor3: "git drop stash@{change}",
+    Explanation:
+      "git commit --amend  is the command used to change the latest commit message.",
+    Link: "https://forum.freecodecamp.org/t/git-guide-how-to-amend-your-most-recent-git-commit-message/13186"
+  },
+  {
+    Question:
+      "Which one of the following is the default text editor in Git Bash?",
+    Answer: "Vim",
+    Distractor1: "Emacs",
+    Distractor2: "Nano",
+    Distractor3: "VS Code",
+    Explanation:
+      "Vim stands for Vi Improved and it is terminal based text editor used among Linux users. You can open the editor by using the following command: vi fileName",
+    Link: "https://www.freecodecamp.org/news/learn-vim-beginners-tutorial/"
+  },
+  {
+    Question: "How do you unstage a staged file in git?",
+    Answer: "git restore --staged <file-path>",
+    Distractor1: "git unstage <file-path>",
+    Distractor2: "git restore <file-path>",
+    Distractor3: "git restore --staged <file-path>",
+    Explanation:
+      "git restore --staged <file-path> command is used to unstage a staged file in git.",
+    Link: "https://www.git-tower.com/learn/git/commands/git-restore"
+  },
+  {
+    Question:
+      "In Git, which command logs the previous commits in single line form?",
+    Answer: "git log --oneline",
+    Distractor1: "git log singleline",
+    Distractor2: "git single log",
+    Distractor3: "git log -1",
+    Explanation:
+      "git log --oneline is the command used to log the previous commits in single line form.",
+    Link: "https://www.freecodecamp.org/news/git-cheat-sheet/"
+  },
+  {
+    Question: "In Git, what does a good commit message look like?",
+    Answer: "It should be short, descriptive and in present tense",
+    Distractor1: "It should be long",
+    Distractor2: "It should be in one word",
+    Distractor3: "None of these",
+    Explanation:
+      "A good commit message should be short, descriptive and in present tense.",
+    Link: "https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/"
+  },
+  {
+    Question:
+      "In Git, what is the shorthand command to stage and commit all changes?",
+    Answer: "git commit -am  '<commit message>'",
+    Distractor1: "git add -m 'commit message'",
+    Distractor2: "git commit all 'commit message'",
+    Distractor3: "git add commit -m 'commit message'",
+    Explanation:
+      "git commit -am  '<commit message>' is used to stage and commit all changes in the current directory and its subdirectories.",
+    Link: "https://git-scm.com/docs/git-commit"
+  },
+  {
+    Question:
+      "Which git command allows you to download objects and refs from another repository without committing to the main branch?",
+    Answer: "git fetch <remote> <branch>",
+    Distractor1: "git pull <remote> <branch>",
+    Distractor2: "git push <remote> <branch>",
+    Distractor3: "git clone <repo>",
+    Explanation:
+      "git fetch <remote> <branch> is used to download objects and refs without committing to the main branch that you are working on",
+    Link: "https://git-scm.com/docs/git-fetch"
+  },
+  {
+    Question: "What is the purpose of the 'git branch' command in Git?",
+    Answer:
+      "git branch is used to list, create, or delete branches in a Git repository.",
+    Distractor1: "git branch is used to commit changes in Git.",
+    Distractor2: "git branch is used to merge branches in Git.",
+    Distractor3: "git branch is used to clone a remote repository in Git.",
+    Explanation:
+      "The 'git branch' command is used to manage branches in a Git repository, including listing existing branches, creating new branches, and deleting branches.",
+    Link: "https://git-scm.com/docs/git-branch"
+  },
+  {
+    Question: "In Git, what is the purpose of the 'git bisect' command?",
+    Answer:
+      "to find a commit that introduced a bug",
+    Distractor1: "to find the latest commit in the repository",
+    Distractor2: "to find the oldest commit in the repository",
+    Distractor3: "to find the commit with the most changes",
+    Explanation:
+      "The 'git bisect' command uses a binary search algorithm to find which commit in your project's history introduced a bug.",
+      Link: "https://git-scm.com/docs/git-bisect"
+  },
+  {
+    Question: "Which command displays help information about Git?",
+    Answer: 
+      "git help",
+    Distractor1: "git assist",
+    Distractor2: "git commit",
+    Distractor3: "git guide",
+    Explanation:
+      "The 'git help' command will display help information on common Git commands. The 'git help git' command will provide a complete overview of the system.",
+      Link: "https://www.freecodecamp.org/news/best-git-tutorial/"
+}
 ];
 
 export default gitQuiz;

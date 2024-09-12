@@ -6,6 +6,7 @@ interface QuizQuestion {
   chosenAnswer: string;
   message: string;
   points: number;
+  correct: boolean;
   displayExplanation: string;
   showReference: string;
   nextQuestion: MouseEventHandler;
@@ -13,13 +14,20 @@ interface QuizQuestion {
 }
 
 const QuizModal: React.FC<QuizQuestion> = QuizQuestion => {
+  const lightBulbUnicode = "\uD83D\uDCA1";
+  const sadFaceUnicode = "\uD83D\uDE14";
+  const answerIcon = QuizQuestion.correct ? lightBulbUnicode : sadFaceUnicode;
   return (
     <>
       <Modal className="modal-styles" show={QuizQuestion.show}>
         <Modal.Header>
           <Modal.Title>
-            <h2 className="modal-text">💡 {QuizQuestion.message}</h2>
-            <h3 className="modal-text">Points: {QuizQuestion.points}</h3>
+            <h2 className="modal-text">
+              {answerIcon} {QuizQuestion.message}
+            </h2>
+            <h3 className="modal-text" data-testid="modal-points">
+              Points: {QuizQuestion.points}
+            </h3>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>

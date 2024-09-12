@@ -33,58 +33,76 @@ a:hover {
   display: block;
 }
 
-/*Quiz styles*/
-
-.select-quiz-styles {
+/* Common shared styles */
+.select-quiz-styles,
+.quiz-div,
+.results-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+/*Quiz styles*/
 .quiz-heading,
 .results-heading {
-  text-align: center;
   font-family: "Roboto Mono", monospace;
+  text-align: center;
 }
 
 .select-btn-div {
   display: flex;
   flex-direction: column;
   margin: 20px;
+  width: 100%;
+  padding: 0 10% 0;
 }
 
 .select-btns,
 .answers-btns {
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 15px;
-  margin: 10px 0;
-  background-color: #ffffff;
-  border: none;
   font-size: 1.2rem;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.select-btns:hover,
+.answers-btns:hover {
+  box-shadow: -1px -1px 15px rgb(245 242 247 / 70%);
+}
+.answers-btns--selected {
+  background-color: #f1be32;
 }
 
 .quiz-btn,
 .results-btn,
 .modal-btn {
-  background-color: #f1be32;
-  border: 3px solid #feac32;
+  background-color: #acd157;
+  border: 3px solid #acd157;
   font-size: 1.2rem;
   padding: 5px;
-}
-
-.quiz-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .quiz-answers-div {
   display: flex;
   flex-direction: column;
   margin: 20px;
+  width: 50%;
+}
+
+.quiz-answers-div legend {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.quiz-answers-div ul {
+  padding: 0;
+  list-style: none;
 }
 
 .quiz-btn {
@@ -95,9 +113,17 @@ a:hover {
 
 .quiz-text {
   display: flex;
-  padding: 0 10px;
   justify-content: space-evenly;
+  padding: 0 10px;
   font-size: 1.4rem;
+}
+
+.submit-btn {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: transparent;
+  opacity: 0.5;
+  border: 2px solid #ffffff;
 }
 
 /*Modal styles*/
@@ -117,14 +143,6 @@ a:hover {
 }
 
 /*Results styles*/
-
-.results-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .results-text {
   font-size: 1.3rem;
   margin-top: 20px;
@@ -132,4 +150,23 @@ a:hover {
 
 .results-rpg-link {
   color: #f1be32;
+}
+
+@media screen and (max-width: 460px) {
+  .quiz-answers-div {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .select-btn-div {
+    padding: 0 20% 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .select-btn-div {
+    width: 25%;
+    padding: 0;
+  }
 }
